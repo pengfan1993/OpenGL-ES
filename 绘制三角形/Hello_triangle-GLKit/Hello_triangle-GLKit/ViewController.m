@@ -40,7 +40,7 @@ static const SceneVertex vertices[] = {
     [EAGLContext setCurrentContext:view.context];
     
     
-    //创建一个Base effect，内部封装的是对应的是program对象
+    //创建一个Base effect，内部封装ES的相关操作，让我们避免写着色器，以及创建program,加载着色器，连接program的过程
     self.baseEffect = [[GLKBaseEffect alloc] init];
     
     self.baseEffect.useConstantColor = GL_TRUE;
@@ -54,6 +54,7 @@ static const SceneVertex vertices[] = {
     glGenBuffers(1, &_vertexBufferID);
     glBindBuffer(GL_ARRAY_BUFFER, _vertexBufferID);
     glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+    
     
     
     //OK，到这里初始化工作完成了
