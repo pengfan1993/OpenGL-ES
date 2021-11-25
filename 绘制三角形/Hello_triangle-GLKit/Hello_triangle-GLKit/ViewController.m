@@ -21,10 +21,10 @@ typedef struct {
 }SceneVertex;
 
 
-static const SceneVertex vertices[] = {
-    {{-0.5f,-0.5f,0.0f}},
-    {{0.5f,-0.5f,0.0f}},
-    {{-0.5f,0.5f,0.0f}},
+static const GLfloat vertices[] = {
+    -0.5f,-0.5f,0.0f,1.0f,0.0f,0.0f, //对应（x,y,z,r,g,b） position 和 color 排布
+    0.5f,-0.5f,0.0f,0.0f,1.0f,0.0f,
+    0.0f,0.5f,0.0f,0.0f,0.0f,1.0f,
 };
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -44,7 +44,7 @@ static const SceneVertex vertices[] = {
     self.baseEffect = [[GLKBaseEffect alloc] init];
     
     self.baseEffect.useConstantColor = GL_TRUE;
-    self.baseEffect.constantColor = GLKVector4Make(1.0f, 0.0f, 1.0f, 1.0f);
+    //self.baseEffect.constantColor = GLKVector4Make(1.0f, 0.0f, 1.0f, 1.0f);
     
    //设置当前图形上下文的背景颜色
     glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
@@ -69,6 +69,7 @@ static const SceneVertex vertices[] = {
     
     //开启顶点属性数组
     glEnableVertexAttribArray(GLKVertexAttribPosition);
+    glEnableVertexAttribArray(GLKVertexAttribColor);
     
     //命令GPU从缓冲区中读取顶点属性
     //关于参数说明，
@@ -78,8 +79,9 @@ static const SceneVertex vertices[] = {
     //第四个参数：表示非浮点数转化时是否需要规范化，这里不用转化，所以传GL_FALSE
     //第五个参数：步长，如果这个值为0，表示每个顶点的属性数据顺序存储，如果大于0，则指定为索引i到i+1的顶点数据之间的位移，这里指定为SceneVertex的大小就是表示位移为0，是顺序存储的，
     //第六个参数:这里使用的缓冲区对象，表示缓冲区的偏移量，这里为NULL表示从最开始的位置
-    glVertexAttribPointer(GLKVertexAttribPosition, 3, GL_FLOAT, GL_FALSE, sizeof(SceneVertex), NULL);
-    
+    GLuint offset = 3 * sizeof(GLfloat);
+    glVertexAttribPointer(GLKVertexAttribPosition, 3, GL_FLOAT, GL_FALSE, sizeof(GLfloat) * 6, NULL);
+    glVertexAttribPointer(GLKVertexAttribColor, 3, GL_FLOAT, GL_FALSE, sizeof(GLfloat) * 6, (const void *)offset);
     
     //调用这个函数绘制三角形
     glDrawArrays(GL_TRIANGLES, 0, 3);
