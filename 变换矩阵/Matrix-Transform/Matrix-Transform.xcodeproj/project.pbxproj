@@ -7,35 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		ABAD04D3274E2FDB0008C8D1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAD04D2274E2FDB0008C8D1 /* AppDelegate.m */; };
-		ABAD04D6274E2FDB0008C8D1 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAD04D5274E2FDB0008C8D1 /* SceneDelegate.m */; };
-		ABAD04DC274E2FDB0008C8D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABAD04DA274E2FDB0008C8D1 /* Main.storyboard */; };
-		ABAD04DE274E2FDE0008C8D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABAD04DD274E2FDE0008C8D1 /* Assets.xcassets */; };
-		ABAD04E1274E2FDE0008C8D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABAD04DF274E2FDE0008C8D1 /* LaunchScreen.storyboard */; };
-		ABAD04E4274E2FDE0008C8D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAD04E3274E2FDE0008C8D1 /* main.m */; };
-		ABAD04EE274E2FFD0008C8D1 /* Hello_triangle.c in Sources */ = {isa = PBXBuildFile; fileRef = ABAD04EC274E2FFD0008C8D1 /* Hello_triangle.c */; };
-		ABAD04EF274E2FFD0008C8D1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABAD04ED274E2FFD0008C8D1 /* ViewController.m */; };
+		AB219AEE2750D7DF0086990B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB219AED2750D7DF0086990B /* AppDelegate.m */; };
+		AB219AF12750D7DF0086990B /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB219AF02750D7DF0086990B /* SceneDelegate.m */; };
+		AB219AF72750D7DF0086990B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB219AF52750D7DF0086990B /* Main.storyboard */; };
+		AB219AF92750D7E20086990B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB219AF82750D7E20086990B /* Assets.xcassets */; };
+		AB219AFC2750D7E20086990B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB219AFA2750D7E20086990B /* LaunchScreen.storyboard */; };
+		AB219AFF2750D7E20086990B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB219AFE2750D7E20086990B /* main.m */; };
+		AB219B072750D8330086990B /* MatrixTransform.c in Sources */ = {isa = PBXBuildFile; fileRef = AB219B062750D8330086990B /* MatrixTransform.c */; };
+		AB219B0A2750D8450086990B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB219B092750D8450086990B /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		ABAD04CE274E2FDB0008C8D1 /* Hello_triangle-without-GLKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hello_triangle-without-GLKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		ABAD04D1274E2FDB0008C8D1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		ABAD04D2274E2FDB0008C8D1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		ABAD04D4274E2FDB0008C8D1 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		ABAD04D5274E2FDB0008C8D1 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		ABAD04DB274E2FDB0008C8D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		ABAD04DD274E2FDE0008C8D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		ABAD04E0274E2FDE0008C8D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		ABAD04E2274E2FDE0008C8D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ABAD04E3274E2FDE0008C8D1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		ABAD04EA274E2FFD0008C8D1 /* Hello_triangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hello_triangle.h; sourceTree = "<group>"; };
-		ABAD04EB274E2FFD0008C8D1 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		ABAD04EC274E2FFD0008C8D1 /* Hello_triangle.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Hello_triangle.c; sourceTree = "<group>"; };
-		ABAD04ED274E2FFD0008C8D1 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AB219AE92750D7DF0086990B /* Matrix-Transform.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Matrix-Transform.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB219AEC2750D7DF0086990B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AB219AED2750D7DF0086990B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AB219AEF2750D7DF0086990B /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		AB219AF02750D7DF0086990B /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		AB219AF62750D7DF0086990B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AB219AF82750D7E20086990B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AB219AFB2750D7E20086990B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AB219AFD2750D7E20086990B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB219AFE2750D7E20086990B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AB219B052750D8330086990B /* MatrixTransform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MatrixTransform.h; sourceTree = "<group>"; };
+		AB219B062750D8330086990B /* MatrixTransform.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MatrixTransform.c; sourceTree = "<group>"; };
+		AB219B082750D8450086990B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AB219B092750D8450086990B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		ABAD04CB274E2FDB0008C8D1 /* Frameworks */ = {
+		AB219AE62750D7DF0086990B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,77 +45,77 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		ABAD04C5274E2FDB0008C8D1 = {
+		AB219AE02750D7DF0086990B = {
 			isa = PBXGroup;
 			children = (
-				ABAD04D0274E2FDB0008C8D1 /* Hello_triangle-without-GLKit */,
-				ABAD04CF274E2FDB0008C8D1 /* Products */,
+				AB219AEB2750D7DF0086990B /* Matrix-Transform */,
+				AB219AEA2750D7DF0086990B /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		ABAD04CF274E2FDB0008C8D1 /* Products */ = {
+		AB219AEA2750D7DF0086990B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ABAD04CE274E2FDB0008C8D1 /* Hello_triangle-without-GLKit.app */,
+				AB219AE92750D7DF0086990B /* Matrix-Transform.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		ABAD04D0274E2FDB0008C8D1 /* Hello_triangle-without-GLKit */ = {
+		AB219AEB2750D7DF0086990B /* Matrix-Transform */ = {
 			isa = PBXGroup;
 			children = (
-				ABAD04D1274E2FDB0008C8D1 /* AppDelegate.h */,
-				ABAD04D2274E2FDB0008C8D1 /* AppDelegate.m */,
-				ABAD04D4274E2FDB0008C8D1 /* SceneDelegate.h */,
-				ABAD04D5274E2FDB0008C8D1 /* SceneDelegate.m */,
-				ABAD04DA274E2FDB0008C8D1 /* Main.storyboard */,
-				ABAD04DD274E2FDE0008C8D1 /* Assets.xcassets */,
-				ABAD04EC274E2FFD0008C8D1 /* Hello_triangle.c */,
-				ABAD04EA274E2FFD0008C8D1 /* Hello_triangle.h */,
-				ABAD04EB274E2FFD0008C8D1 /* ViewController.h */,
-				ABAD04ED274E2FFD0008C8D1 /* ViewController.m */,
-				ABAD04DF274E2FDE0008C8D1 /* LaunchScreen.storyboard */,
-				ABAD04E2274E2FDE0008C8D1 /* Info.plist */,
-				ABAD04E3274E2FDE0008C8D1 /* main.m */,
+				AB219AEC2750D7DF0086990B /* AppDelegate.h */,
+				AB219AED2750D7DF0086990B /* AppDelegate.m */,
+				AB219AEF2750D7DF0086990B /* SceneDelegate.h */,
+				AB219AF02750D7DF0086990B /* SceneDelegate.m */,
+				AB219AF52750D7DF0086990B /* Main.storyboard */,
+				AB219B052750D8330086990B /* MatrixTransform.h */,
+				AB219B062750D8330086990B /* MatrixTransform.c */,
+				AB219B082750D8450086990B /* ViewController.h */,
+				AB219B092750D8450086990B /* ViewController.m */,
+				AB219AF82750D7E20086990B /* Assets.xcassets */,
+				AB219AFA2750D7E20086990B /* LaunchScreen.storyboard */,
+				AB219AFD2750D7E20086990B /* Info.plist */,
+				AB219AFE2750D7E20086990B /* main.m */,
 			);
-			path = "Hello_triangle-without-GLKit";
+			path = "Matrix-Transform";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		ABAD04CD274E2FDB0008C8D1 /* Hello_triangle-without-GLKit */ = {
+		AB219AE82750D7DF0086990B /* Matrix-Transform */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ABAD04E7274E2FDE0008C8D1 /* Build configuration list for PBXNativeTarget "Hello_triangle-without-GLKit" */;
+			buildConfigurationList = AB219B022750D7E20086990B /* Build configuration list for PBXNativeTarget "Matrix-Transform" */;
 			buildPhases = (
-				ABAD04CA274E2FDB0008C8D1 /* Sources */,
-				ABAD04CB274E2FDB0008C8D1 /* Frameworks */,
-				ABAD04CC274E2FDB0008C8D1 /* Resources */,
+				AB219AE52750D7DF0086990B /* Sources */,
+				AB219AE62750D7DF0086990B /* Frameworks */,
+				AB219AE72750D7DF0086990B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Hello_triangle-without-GLKit";
-			productName = "Hello_triangle-without-GLKit";
-			productReference = ABAD04CE274E2FDB0008C8D1 /* Hello_triangle-without-GLKit.app */;
+			name = "Matrix-Transform";
+			productName = "Matrix-Transform";
+			productReference = AB219AE92750D7DF0086990B /* Matrix-Transform.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		ABAD04C6274E2FDB0008C8D1 /* Project object */ = {
+		AB219AE12750D7DF0086990B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
-					ABAD04CD274E2FDB0008C8D1 = {
+					AB219AE82750D7DF0086990B = {
 						CreatedOnToolsVersion = 13.0;
 					};
 				};
 			};
-			buildConfigurationList = ABAD04C9274E2FDB0008C8D1 /* Build configuration list for PBXProject "Hello_triangle-without-GLKit" */;
+			buildConfigurationList = AB219AE42750D7DF0086990B /* Build configuration list for PBXProject "Matrix-Transform" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -123,57 +123,57 @@
 				en,
 				Base,
 			);
-			mainGroup = ABAD04C5274E2FDB0008C8D1;
-			productRefGroup = ABAD04CF274E2FDB0008C8D1 /* Products */;
+			mainGroup = AB219AE02750D7DF0086990B;
+			productRefGroup = AB219AEA2750D7DF0086990B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				ABAD04CD274E2FDB0008C8D1 /* Hello_triangle-without-GLKit */,
+				AB219AE82750D7DF0086990B /* Matrix-Transform */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		ABAD04CC274E2FDB0008C8D1 /* Resources */ = {
+		AB219AE72750D7DF0086990B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABAD04E1274E2FDE0008C8D1 /* LaunchScreen.storyboard in Resources */,
-				ABAD04DE274E2FDE0008C8D1 /* Assets.xcassets in Resources */,
-				ABAD04DC274E2FDB0008C8D1 /* Main.storyboard in Resources */,
+				AB219AFC2750D7E20086990B /* LaunchScreen.storyboard in Resources */,
+				AB219AF92750D7E20086990B /* Assets.xcassets in Resources */,
+				AB219AF72750D7DF0086990B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		ABAD04CA274E2FDB0008C8D1 /* Sources */ = {
+		AB219AE52750D7DF0086990B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABAD04D3274E2FDB0008C8D1 /* AppDelegate.m in Sources */,
-				ABAD04E4274E2FDE0008C8D1 /* main.m in Sources */,
-				ABAD04EE274E2FFD0008C8D1 /* Hello_triangle.c in Sources */,
-				ABAD04D6274E2FDB0008C8D1 /* SceneDelegate.m in Sources */,
-				ABAD04EF274E2FFD0008C8D1 /* ViewController.m in Sources */,
+				AB219AEE2750D7DF0086990B /* AppDelegate.m in Sources */,
+				AB219AFF2750D7E20086990B /* main.m in Sources */,
+				AB219AF12750D7DF0086990B /* SceneDelegate.m in Sources */,
+				AB219B072750D8330086990B /* MatrixTransform.c in Sources */,
+				AB219B0A2750D8450086990B /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		ABAD04DA274E2FDB0008C8D1 /* Main.storyboard */ = {
+		AB219AF52750D7DF0086990B /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				ABAD04DB274E2FDB0008C8D1 /* Base */,
+				AB219AF62750D7DF0086990B /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		ABAD04DF274E2FDE0008C8D1 /* LaunchScreen.storyboard */ = {
+		AB219AFA2750D7E20086990B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				ABAD04E0274E2FDE0008C8D1 /* Base */,
+				AB219AFB2750D7E20086990B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -181,7 +181,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		ABAD04E5274E2FDE0008C8D1 /* Debug */ = {
+		AB219B002750D7E20086990B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -240,7 +240,7 @@
 			};
 			name = Debug;
 		};
-		ABAD04E6274E2FDE0008C8D1 /* Release */ = {
+		AB219B012750D7E20086990B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -293,7 +293,7 @@
 			};
 			name = Release;
 		};
-		ABAD04E8274E2FDE0008C8D1 /* Debug */ = {
+		AB219B032750D7E20086990B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -303,7 +303,7 @@
 				DEVELOPMENT_TEAM = 563M4H9P36;
 				GCC_PREPROCESSOR_DEFINITIONS = "GLES_SILENCE_DEPRECATION=1";
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Hello_triangle-without-GLKit/Info.plist";
+				INFOPLIST_FILE = "Matrix-Transform/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -314,14 +314,14 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "SS.SSCameraSDK.Matrix-Transform";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		ABAD04E9274E2FDE0008C8D1 /* Release */ = {
+		AB219B042750D7E20086990B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -331,7 +331,7 @@
 				DEVELOPMENT_TEAM = 563M4H9P36;
 				GCC_PREPROCESSOR_DEFINITIONS = "GLES_SILENCE_DEPRECATION=1";
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Hello_triangle-without-GLKit/Info.plist";
+				INFOPLIST_FILE = "Matrix-Transform/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -342,7 +342,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "SS.SSCameraSDK.Matrix-Transform";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -352,25 +352,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		ABAD04C9274E2FDB0008C8D1 /* Build configuration list for PBXProject "Hello_triangle-without-GLKit" */ = {
+		AB219AE42750D7DF0086990B /* Build configuration list for PBXProject "Matrix-Transform" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ABAD04E5274E2FDE0008C8D1 /* Debug */,
-				ABAD04E6274E2FDE0008C8D1 /* Release */,
+				AB219B002750D7E20086990B /* Debug */,
+				AB219B012750D7E20086990B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ABAD04E7274E2FDE0008C8D1 /* Build configuration list for PBXNativeTarget "Hello_triangle-without-GLKit" */ = {
+		AB219B022750D7E20086990B /* Build configuration list for PBXNativeTarget "Matrix-Transform" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ABAD04E8274E2FDE0008C8D1 /* Debug */,
-				ABAD04E9274E2FDE0008C8D1 /* Release */,
+				AB219B032750D7E20086990B /* Debug */,
+				AB219B042750D7E20086990B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = ABAD04C6274E2FDB0008C8D1 /* Project object */;
+	rootObject = AB219AE12750D7DF0086990B /* Project object */;
 }
