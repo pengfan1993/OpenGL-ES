@@ -17,6 +17,7 @@ int init (ESContext *esContext) {
        "void main()                              \n"
        "{                                        \n"
        "   gl_Position = vPosition;              \n"
+       "   gl_PointSize = 25.0;                  \n" //改变点的大小
        "}                                        \n";
 
     //片段着色器
@@ -159,7 +160,7 @@ void draw( ESContext *esContext) {
     glEnableVertexAttribArray(0);
     
     //绘制顶点
-    glDrawArrays(GL_TRIANGLES, 0, 3);
+    glDrawArrays(GL_POINTS, 0, 3);
 
 }
 

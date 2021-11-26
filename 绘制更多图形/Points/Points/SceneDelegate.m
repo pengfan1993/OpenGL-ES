@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.m
-//  Hello_triangle-GLKit
+//  Points
 //
-//  Created by pengfan on 2021/11/24.
+//  Created by pengfan on 2021/11/26.
 //
 
 #import "SceneDelegate.h"
@@ -18,8 +18,6 @@
     // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
     // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
     // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-    
-   
 }
 
 

@@ -48,6 +48,7 @@ static const GLfloat vertices[] = {
     
    //设置当前图形上下文的背景颜色
     glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
+
     
     //生成顶点数组缓冲区对象，并且绑定，然后初始化一个缓冲保存在GPU中，相对于opengl ES 2.0的客户数组对象，这种方法更高效，因为客户数组对象需要将内存复制到GPU中，这种方法可以显著地改进渲染性能，也会降低内存带宽和电力需求，这对于手持设备相当重要。
     
@@ -79,9 +80,9 @@ static const GLfloat vertices[] = {
     //第四个参数：表示非浮点数转化时是否需要规范化，这里不用转化，所以传GL_FALSE
     //第五个参数：步长，如果这个值为0，表示每个顶点的属性数据顺序存储，如果大于0，则指定为索引i到i+1的顶点数据之间的位移，这里指定为SceneVertex的大小就是表示位移为0，是顺序存储的，
     //第六个参数:这里使用的缓冲区对象，表示缓冲区的偏移量，这里为NULL表示从最开始的位置
-    GLuint offset = 3 * sizeof(GLfloat);
-    glVertexAttribPointer(GLKVertexAttribPosition, 3, GL_FLOAT, GL_FALSE, sizeof(GLfloat) * 6, NULL);
-    glVertexAttribPointer(GLKVertexAttribColor, 3, GL_FLOAT, GL_FALSE, sizeof(GLfloat) * 6, (const void *)offset);
+    GLuint offset = 3 * sizeof(float);
+    glVertexAttribPointer(GLKVertexAttribPosition, 3, GL_FLOAT, GL_FALSE, sizeof(float) * 6, NULL);
+    glVertexAttribPointer(GLKVertexAttribColor, 3, GL_FLOAT, GL_FALSE, sizeof(float) * 6, (const void *)offset);
     
     //调用这个函数绘制三角形
     glDrawArrays(GL_TRIANGLES, 0, 3);
