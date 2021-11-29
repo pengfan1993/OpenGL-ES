@@ -90,10 +90,10 @@
 //    glDrawArrays(GL_TRIANGLES, 0, 4);
     
     //以三角形的形式绘制点
-    //glDrawArrays(GL_TRIANGLES, 0, 4);
+    glDrawArrays(GL_TRIANGLES, 0, 4);
 
     //设置线的宽度为5像素
-    glLineWidth(5);
+    //glLineWidth(5);
     
 //    //以直线带的方式绘制线段
 //    glDrawArrays(GL_LINE_STRIP, 0, 4);
