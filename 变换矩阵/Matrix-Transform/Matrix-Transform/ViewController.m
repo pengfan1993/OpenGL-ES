@@ -47,12 +47,7 @@
            -0.5f,   0.0f,  0.0f,  0.0f,  1.0f,  0.0f,
             0.5f,   0.0f,  0.0f,  0.0f,  0.0f,  1.0f,
         };
-    
-    GLfloat one[9] = {
-        1,2,3,
-        4,5,6,
-        7,8,9,
-    };
+    +-
     glClear(GL_COLOR_BUFFER_BIT);
     
     float varyFactor = sin(self.elapsedTime);
