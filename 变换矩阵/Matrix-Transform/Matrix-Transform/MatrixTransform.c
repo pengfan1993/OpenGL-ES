@@ -80,7 +80,7 @@ int init (ESContext *esContext) {
     
     glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
     
-    return 1;
+    return  GL_TRUE;
 }
 
 
@@ -108,6 +108,8 @@ int esMain(ESContext *esContext) {
     esContext->drawFunc = draw;
     esContext->shutDownFunc = shutDown;
     return GL_TRUE;
+
+    
 }
 
 

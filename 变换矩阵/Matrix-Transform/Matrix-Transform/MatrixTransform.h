@@ -11,6 +11,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <OpenGLES/ES3/gl.h>
+
 typedef struct ESContext ESContext;
 
 struct ESContext {
@@ -41,6 +42,8 @@ void draw(ESContext *esContext);
 void shutDown(ESContext *esContext);
 
 ///赋值操作
+
 int esMain(ESContext *esContext);
+
 
 #endif /* MatrixTransform_h */
