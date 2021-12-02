@@ -34,30 +34,35 @@
     esMain(&_esContext);
 }
 - (void)glkView:(GLKView *)view drawInRect:(CGRect)rect {
-    _elapsedTime += 0.02;
-    float varyFactor = sin(self.elapsedTime);
+    _elapsedTime += 2.0;
+    float varyFactor = GLKMathDegreesToRadians(_elapsedTime);
     _esContext.width = view.drawableWidth;
     _esContext.height = view.drawableHeight;
     
     // x, y, z, r, g, b,每一行存储一个点的信息，位置和颜色
     static GLfloat triangleData[36] = {
-            -0.5f,   0.5f,  0.0f,  1.0f,  0.0f,  0.0f,
-           -0.5f,   0.0f,  0.0f,  0.0f,  1.0f,  0.0f,
-            0.5f,   0.0f,  0.0f,  0.0f,  0.0f,  1.0f,
-            0.0f,  -0.5f,  0.0f,  1.0f,  0.0f,  0.0f,
+           -0.5f,    0.5f,  0.0f,  1.0f,  0.0f,  0.0f,
+           -0.5f,   -0.5f,  0.0f,  0.0f,  1.0f,  0.0f,
+            0.5f,   -0.5f,  0.0f,  0.0f,  0.0f,  1.0f,
+            0.5f,    0.5f,  0.0f,  1.0f,  0.0f,  0.0f,
         };
     glClear(GL_COLOR_BUFFER_BIT);
     
+    //x,y放大200倍，本来是展示的一个（1 * 1）像素点，需要将矩形显示出来
+    GLKMatrix4 scale = GLKMatrix4MakeScale(300, 300, 300);
+                        
+    //随着时间绕着Y轴旋转
+    GLKMatrix4 rotate = GLKMatrix4MakeRotation(varyFactor, 0, 1, 0);
+        
+    CGFloat width = view.frame.size.width / 2.0;
+    CGFloat height = view.frame.size.height / 2.0;
     
-   
-    GLKMatrix4 scaleMatrix = GLKMatrix4MakeScale(varyFactor, varyFactor, 1.0);
+    //正交投影(可视的Z轴范围是-10.0 ~ 10.0)
+    GLKMatrix4 orthoMatrix = GLKMatrix4MakeOrtho(-width, width, -height, height, -10.0, 10.0);
     
-    GLKMatrix4 rotateMatrix = GLKMatrix4MakeRotation(varyFactor, 0.0, 0.0, 1.0);
-    
-    GLKMatrix4 translationMatrix = GLKMatrix4MakeTranslation(varyFactor, 0.0, 0.0);
-    
-    self.transformMatrix = GLKMatrix4Multiply(translationMatrix, rotateMatrix);
-    self.transformMatrix = GLKMatrix4Multiply(self.transformMatrix, scaleMatrix);
+    //注意顺序，先旋转，后平移，最后矩阵投影
+    self.transformMatrix = GLKMatrix4Multiply(scale, rotate);
+    self.transformMatrix = GLKMatrix4Multiply(orthoMatrix, self.transformMatrix);
     
     //加载统一变量
     GLuint uniformLocation = glGetUniformLocation(_esContext.program, "transform");

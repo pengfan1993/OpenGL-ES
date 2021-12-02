@@ -34,30 +34,32 @@
     esMain(&_esContext);
 }
 - (void)glkView:(GLKView *)view drawInRect:(CGRect)rect {
-    _elapsedTime += 0.02;
-    float varyFactor = sin(self.elapsedTime);
+    _elapsedTime += 0.5;
+    float varyFactor = GLKMathDegreesToRadians(_elapsedTime);
     _esContext.width = view.drawableWidth;
     _esContext.height = view.drawableHeight;
     
     // x, y, z, r, g, b,每一行存储一个点的信息，位置和颜色
     static GLfloat triangleData[36] = {
-            -0.5f,   0.5f,  0.0f,  1.0f,  0.0f,  0.0f,
-           -0.5f,   0.0f,  0.0f,  0.0f,  1.0f,  0.0f,
-            0.5f,   0.0f,  0.0f,  0.0f,  0.0f,  1.0f,
-            0.0f,  -0.5f,  0.0f,  1.0f,  0.0f,  0.0f,
+           -0.5f,    0.5f,  0.0f,  1.0f,  0.0f,  0.0f,
+           -0.5f,   -0.5f,  0.0f,  0.0f,  1.0f,  0.0f,
+            0.5f,   -0.5f,  0.0f,  0.0f,  0.0f,  1.0f,
+            0.5f,    0.5f,  0.0f,  1.0f,  0.0f,  0.0f,
         };
     glClear(GL_COLOR_BUFFER_BIT);
     
+    //往Z轴负方向平移1.6个距离
+    GLKMatrix4 translate = GLKMatrix4MakeTranslation(0, 0, -1.6);
+                        
+    //随着时间绕着Y轴旋转
+    GLKMatrix4 rotate = GLKMatrix4MakeRotation(varyFactor, 0, 1, 0);
+                        
+    //透视投影
+    GLKMatrix4 perspectiveMatrix = GLKMatrix4MakePerspective(GLKMathDegreesToRadians(90), view.frame.size.width / view.frame.size.height, 0.2, 8.0);
     
-   
-    GLKMatrix4 scaleMatrix = GLKMatrix4MakeScale(varyFactor, varyFactor, 1.0);
-    
-    GLKMatrix4 rotateMatrix = GLKMatrix4MakeRotation(varyFactor, 0.0, 0.0, 1.0);
-    
-    GLKMatrix4 translationMatrix = GLKMatrix4MakeTranslation(varyFactor, 0.0, 0.0);
-    
-    self.transformMatrix = GLKMatrix4Multiply(translationMatrix, rotateMatrix);
-    self.transformMatrix = GLKMatrix4Multiply(self.transformMatrix, scaleMatrix);
+    //注意顺序，先旋转，后平移，最后矩阵投影
+    self.transformMatrix = GLKMatrix4Multiply(translate, rotate);
+    self.transformMatrix = GLKMatrix4Multiply(perspectiveMatrix, self.transformMatrix);
     
     //加载统一变量
     GLuint uniformLocation = glGetUniformLocation(_esContext.program, "transform");

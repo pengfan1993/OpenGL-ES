@@ -93,7 +93,7 @@ void draw(ESContext *esContext) {
     
     
     //绘制顶点
-    glDrawArrays(GL_TRIANGLES, 0, 6);
+    glDrawArrays(GL_TRIANGLE_FAN, 0, 4);
 }
 
 void shutDown(ESContext *esContext) {

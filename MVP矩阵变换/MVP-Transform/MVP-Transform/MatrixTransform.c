@@ -7,6 +7,8 @@
 
 #include "MatrixTransform.h"
 GLuint loadShader(GLenum  shaderType,const char *shaderSrc);
+
+
 int init (ESContext *esContext) {
     //顶点着色器
     char vShaderStr[] =
@@ -93,7 +95,7 @@ void draw(ESContext *esContext) {
     
     
     //绘制顶点
-    glDrawArrays(GL_TRIANGLES, 0, 6);
+    glDrawArrays(GL_TRIANGLE_FAN, 0, 4);
 }
 
 void shutDown(ESContext *esContext) {
