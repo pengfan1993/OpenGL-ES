@@ -6,33 +6,20 @@
 //
 
 #include "MatrixTransform.h"
+#import <Foundation/Foundation.h>
 GLuint loadShader(GLenum  shaderType,const char *shaderSrc);
 
-
+const char * loadShaderSource(NSString *filePath) {
+    NSData *data = [NSData dataWithContentsOfFile:filePath];
+    NSString *shaderStr = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    return [shaderStr cStringUsingEncoding:NSUTF8StringEncoding];
+}
 int init (ESContext *esContext) {
+    NSString *vertexFile = [[NSBundle mainBundle] pathForResource:@"vertexShader.glsl" ofType:nil];
+    NSString *fragmentFile = [[NSBundle mainBundle] pathForResource:@"fragmentShader.glsl" ofType:nil];
     //顶点着色器
-    char vShaderStr[] =
-       "#version 300 es                          \n"
-       " in vec4 vPosition;  \n"
-       " in vec4 vcolor;     \n"
-       "uniform mat4 transform;                  \n"
-       "out vec4 f_color;                        \n"
-       "void main()                              \n"
-       "{                                        \n"
-       "   f_color = vcolor;                     \n"
-       "   gl_Position = transform * vPosition;  \n"
-       "}                                        \n";
-
-    
-    //片段着色器
-    char fShaderStr[] =
-        "#version 300 es          \n"
-        "precision mediump float; \n"
-        "in vec4 f_color;         \n"
-        "out vec4 o_fragColor;    \n"
-        "void main() {            \n"
-        "   o_fragColor = f_color;  \n" //这里设置颜色为绿色
-        "}                        \n";
+    const char * vShaderStr = loadShaderSource(vertexFile);
+    const char * fShaderStr = loadShaderSource(fragmentFile);
     
     GLuint vertexShader;
     GLuint fragmentShader;
@@ -65,7 +52,7 @@ int init (ESContext *esContext) {
         glGetProgramiv(programObject, GL_INFO_LOG_LENGTH, &infoLength);
         
         if (infoLength > 1) {
-            char *info = malloc(sizeof(char) * infoLength);
+            char *info = (char *)malloc(sizeof(char) * infoLength);
             
             glGetProgramInfoLog(programObject, infoLength, NULL, info);
             
@@ -150,7 +137,7 @@ GLuint loadShader(GLenum  shaderType,const char *shaderSrc) {
         
         
         if (infoLength > 1) {
-            char *logInfo = malloc(sizeof(char) * infoLength);
+            char *logInfo = (char *)malloc(sizeof(char) * infoLength);
             
             glGetShaderInfoLog(shader, infoLength, NULL, logInfo);
             
