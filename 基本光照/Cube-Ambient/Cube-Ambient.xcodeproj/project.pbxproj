@@ -7,39 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AB739C33275A097B00AA1F72 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB739C32275A097B00AA1F72 /* AppDelegate.m */; };
-		AB739C36275A097B00AA1F72 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB739C35275A097B00AA1F72 /* SceneDelegate.m */; };
-		AB739C3C275A097B00AA1F72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB739C3A275A097B00AA1F72 /* Main.storyboard */; };
-		AB739C3E275A097E00AA1F72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB739C3D275A097E00AA1F72 /* Assets.xcassets */; };
-		AB739C41275A097E00AA1F72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB739C3F275A097E00AA1F72 /* LaunchScreen.storyboard */; };
-		AB739C44275A097E00AA1F72 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB739C43275A097E00AA1F72 /* main.m */; };
-		AB739C50275A0C5700AA1F72 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB739C4C275A0C5700AA1F72 /* ViewController.m */; };
-		AB739C51275A0C5700AA1F72 /* MatrixTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = AB739C4E275A0C5700AA1F72 /* MatrixTransform.m */; };
-		ABD93261275DE61F00F97FE1 /* fragmentShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = ABD9325F275DE61F00F97FE1 /* fragmentShader.glsl */; };
-		ABD93262275DE61F00F97FE1 /* vertexShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = ABD93260275DE61F00F97FE1 /* vertexShader.glsl */; };
+		ABD9327B275E0B0A00F97FE1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD9327A275E0B0A00F97FE1 /* AppDelegate.m */; };
+		ABD9327E275E0B0A00F97FE1 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD9327D275E0B0A00F97FE1 /* SceneDelegate.m */; };
+		ABD93284275E0B0A00F97FE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABD93282275E0B0A00F97FE1 /* Main.storyboard */; };
+		ABD93286275E0B0D00F97FE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABD93285275E0B0D00F97FE1 /* Assets.xcassets */; };
+		ABD93289275E0B0D00F97FE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABD93287275E0B0D00F97FE1 /* LaunchScreen.storyboard */; };
+		ABD9328C275E0B0D00F97FE1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD9328B275E0B0D00F97FE1 /* main.m */; };
+		ABD932A2275E0BE200F97FE1 /* vertexShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = ABD9329C275E0BE200F97FE1 /* vertexShader.glsl */; };
+		ABD932A3275E0BE200F97FE1 /* MatrixTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD9329D275E0BE200F97FE1 /* MatrixTransform.m */; };
+		ABD932A4275E0BE200F97FE1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD932A0275E0BE200F97FE1 /* ViewController.m */; };
+		ABD932A5275E0BE200F97FE1 /* fragmentShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = ABD932A1275E0BE200F97FE1 /* fragmentShader.glsl */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AB739C2E275A097B00AA1F72 /* Draw-Cube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Draw-Cube.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB739C31275A097B00AA1F72 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		AB739C32275A097B00AA1F72 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		AB739C34275A097B00AA1F72 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		AB739C35275A097B00AA1F72 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		AB739C3B275A097B00AA1F72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AB739C3D275A097E00AA1F72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AB739C40275A097E00AA1F72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		AB739C42275A097E00AA1F72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AB739C43275A097E00AA1F72 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		AB739C4C275A0C5700AA1F72 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		AB739C4D275A0C5700AA1F72 /* MatrixTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatrixTransform.h; sourceTree = "<group>"; };
-		AB739C4E275A0C5700AA1F72 /* MatrixTransform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatrixTransform.m; sourceTree = "<group>"; };
-		AB739C4F275A0C5700AA1F72 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		ABD9325F275DE61F00F97FE1 /* fragmentShader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fragmentShader.glsl; sourceTree = "<group>"; };
-		ABD93260275DE61F00F97FE1 /* vertexShader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vertexShader.glsl; sourceTree = "<group>"; };
+		ABD93276275E0B0A00F97FE1 /* Cube-Ambient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cube-Ambient.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABD93279275E0B0A00F97FE1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		ABD9327A275E0B0A00F97FE1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		ABD9327C275E0B0A00F97FE1 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		ABD9327D275E0B0A00F97FE1 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		ABD93283275E0B0A00F97FE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ABD93285275E0B0D00F97FE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ABD93288275E0B0D00F97FE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ABD9328A275E0B0D00F97FE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABD9328B275E0B0D00F97FE1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ABD9329C275E0BE200F97FE1 /* vertexShader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vertexShader.glsl; sourceTree = "<group>"; };
+		ABD9329D275E0BE200F97FE1 /* MatrixTransform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatrixTransform.m; sourceTree = "<group>"; };
+		ABD9329E275E0BE200F97FE1 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		ABD9329F275E0BE200F97FE1 /* MatrixTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatrixTransform.h; sourceTree = "<group>"; };
+		ABD932A0275E0BE200F97FE1 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		ABD932A1275E0BE200F97FE1 /* fragmentShader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fragmentShader.glsl; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		AB739C2B275A097B00AA1F72 /* Frameworks */ = {
+		ABD93273275E0B0A00F97FE1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -49,79 +49,79 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AB739C25275A097B00AA1F72 = {
+		ABD9326D275E0B0A00F97FE1 = {
 			isa = PBXGroup;
 			children = (
-				AB739C30275A097B00AA1F72 /* Draw-Cube */,
-				AB739C2F275A097B00AA1F72 /* Products */,
+				ABD93278275E0B0A00F97FE1 /* Cube-Ambient */,
+				ABD93277275E0B0A00F97FE1 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		AB739C2F275A097B00AA1F72 /* Products */ = {
+		ABD93277275E0B0A00F97FE1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AB739C2E275A097B00AA1F72 /* Draw-Cube.app */,
+				ABD93276275E0B0A00F97FE1 /* Cube-Ambient.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AB739C30275A097B00AA1F72 /* Draw-Cube */ = {
+		ABD93278275E0B0A00F97FE1 /* Cube-Ambient */ = {
 			isa = PBXGroup;
 			children = (
-				AB739C31275A097B00AA1F72 /* AppDelegate.h */,
-				AB739C32275A097B00AA1F72 /* AppDelegate.m */,
-				AB739C34275A097B00AA1F72 /* SceneDelegate.h */,
-				AB739C35275A097B00AA1F72 /* SceneDelegate.m */,
-				AB739C4D275A0C5700AA1F72 /* MatrixTransform.h */,
-				AB739C4E275A0C5700AA1F72 /* MatrixTransform.m */,
-				ABD9325F275DE61F00F97FE1 /* fragmentShader.glsl */,
-				ABD93260275DE61F00F97FE1 /* vertexShader.glsl */,
-				AB739C4F275A0C5700AA1F72 /* ViewController.h */,
-				AB739C4C275A0C5700AA1F72 /* ViewController.m */,
-				AB739C3A275A097B00AA1F72 /* Main.storyboard */,
-				AB739C3D275A097E00AA1F72 /* Assets.xcassets */,
-				AB739C3F275A097E00AA1F72 /* LaunchScreen.storyboard */,
-				AB739C42275A097E00AA1F72 /* Info.plist */,
-				AB739C43275A097E00AA1F72 /* main.m */,
+				ABD93279275E0B0A00F97FE1 /* AppDelegate.h */,
+				ABD9327A275E0B0A00F97FE1 /* AppDelegate.m */,
+				ABD9327C275E0B0A00F97FE1 /* SceneDelegate.h */,
+				ABD9327D275E0B0A00F97FE1 /* SceneDelegate.m */,
+				ABD93282275E0B0A00F97FE1 /* Main.storyboard */,
+				ABD932A1275E0BE200F97FE1 /* fragmentShader.glsl */,
+				ABD9329C275E0BE200F97FE1 /* vertexShader.glsl */,
+				ABD9329F275E0BE200F97FE1 /* MatrixTransform.h */,
+				ABD9329D275E0BE200F97FE1 /* MatrixTransform.m */,
+				ABD9329E275E0BE200F97FE1 /* ViewController.h */,
+				ABD932A0275E0BE200F97FE1 /* ViewController.m */,
+				ABD93285275E0B0D00F97FE1 /* Assets.xcassets */,
+				ABD93287275E0B0D00F97FE1 /* LaunchScreen.storyboard */,
+				ABD9328A275E0B0D00F97FE1 /* Info.plist */,
+				ABD9328B275E0B0D00F97FE1 /* main.m */,
 			);
-			path = "Draw-Cube";
+			path = "Cube-Ambient";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AB739C2D275A097B00AA1F72 /* Draw-Cube */ = {
+		ABD93275275E0B0A00F97FE1 /* Cube-Ambient */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AB739C47275A097E00AA1F72 /* Build configuration list for PBXNativeTarget "Draw-Cube" */;
+			buildConfigurationList = ABD9328F275E0B0D00F97FE1 /* Build configuration list for PBXNativeTarget "Cube-Ambient" */;
 			buildPhases = (
-				AB739C2A275A097B00AA1F72 /* Sources */,
-				AB739C2B275A097B00AA1F72 /* Frameworks */,
-				AB739C2C275A097B00AA1F72 /* Resources */,
+				ABD93272275E0B0A00F97FE1 /* Sources */,
+				ABD93273275E0B0A00F97FE1 /* Frameworks */,
+				ABD93274275E0B0A00F97FE1 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Draw-Cube";
-			productName = "Draw-Cube";
-			productReference = AB739C2E275A097B00AA1F72 /* Draw-Cube.app */;
+			name = "Cube-Ambient";
+			productName = "Cube-Ambient";
+			productReference = ABD93276275E0B0A00F97FE1 /* Cube-Ambient.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		AB739C26275A097B00AA1F72 /* Project object */ = {
+		ABD9326E275E0B0A00F97FE1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
-					AB739C2D275A097B00AA1F72 = {
+					ABD93275275E0B0A00F97FE1 = {
 						CreatedOnToolsVersion = 13.0;
 					};
 				};
 			};
-			buildConfigurationList = AB739C29275A097B00AA1F72 /* Build configuration list for PBXProject "Draw-Cube" */;
+			buildConfigurationList = ABD93271275E0B0A00F97FE1 /* Build configuration list for PBXProject "Cube-Ambient" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -129,59 +129,59 @@
 				en,
 				Base,
 			);
-			mainGroup = AB739C25275A097B00AA1F72;
-			productRefGroup = AB739C2F275A097B00AA1F72 /* Products */;
+			mainGroup = ABD9326D275E0B0A00F97FE1;
+			productRefGroup = ABD93277275E0B0A00F97FE1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AB739C2D275A097B00AA1F72 /* Draw-Cube */,
+				ABD93275275E0B0A00F97FE1 /* Cube-Ambient */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		AB739C2C275A097B00AA1F72 /* Resources */ = {
+		ABD93274275E0B0A00F97FE1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB739C41275A097E00AA1F72 /* LaunchScreen.storyboard in Resources */,
-				AB739C3E275A097E00AA1F72 /* Assets.xcassets in Resources */,
-				ABD93262275DE61F00F97FE1 /* vertexShader.glsl in Resources */,
-				ABD93261275DE61F00F97FE1 /* fragmentShader.glsl in Resources */,
-				AB739C3C275A097B00AA1F72 /* Main.storyboard in Resources */,
+				ABD932A5275E0BE200F97FE1 /* fragmentShader.glsl in Resources */,
+				ABD93289275E0B0D00F97FE1 /* LaunchScreen.storyboard in Resources */,
+				ABD93286275E0B0D00F97FE1 /* Assets.xcassets in Resources */,
+				ABD932A2275E0BE200F97FE1 /* vertexShader.glsl in Resources */,
+				ABD93284275E0B0A00F97FE1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		AB739C2A275A097B00AA1F72 /* Sources */ = {
+		ABD93272275E0B0A00F97FE1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB739C33275A097B00AA1F72 /* AppDelegate.m in Sources */,
-				AB739C44275A097E00AA1F72 /* main.m in Sources */,
-				AB739C50275A0C5700AA1F72 /* ViewController.m in Sources */,
-				AB739C36275A097B00AA1F72 /* SceneDelegate.m in Sources */,
-				AB739C51275A0C5700AA1F72 /* MatrixTransform.m in Sources */,
+				ABD9327B275E0B0A00F97FE1 /* AppDelegate.m in Sources */,
+				ABD932A3275E0BE200F97FE1 /* MatrixTransform.m in Sources */,
+				ABD9328C275E0B0D00F97FE1 /* main.m in Sources */,
+				ABD9327E275E0B0A00F97FE1 /* SceneDelegate.m in Sources */,
+				ABD932A4275E0BE200F97FE1 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		AB739C3A275A097B00AA1F72 /* Main.storyboard */ = {
+		ABD93282275E0B0A00F97FE1 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				AB739C3B275A097B00AA1F72 /* Base */,
+				ABD93283275E0B0A00F97FE1 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		AB739C3F275A097E00AA1F72 /* LaunchScreen.storyboard */ = {
+		ABD93287275E0B0D00F97FE1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				AB739C40275A097E00AA1F72 /* Base */,
+				ABD93288275E0B0D00F97FE1 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -189,7 +189,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		AB739C45275A097E00AA1F72 /* Debug */ = {
+		ABD9328D275E0B0D00F97FE1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -248,7 +248,7 @@
 			};
 			name = Debug;
 		};
-		AB739C46275A097E00AA1F72 /* Release */ = {
+		ABD9328E275E0B0D00F97FE1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -301,17 +301,17 @@
 			};
 			name = Release;
 		};
-		AB739C48275A097E00AA1F72 /* Debug */ = {
+		ABD93290275E0B0D00F97FE1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = G7R3Y58HQ5;
+				DEVELOPMENT_TEAM = 563M4H9P36;
 				GCC_PREPROCESSOR_DEFINITIONS = "GLES_SILENCE_DEPRECATION=1";
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Draw-Cube/Info.plist";
+				INFOPLIST_FILE = "Cube-Ambient/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -322,24 +322,24 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "SS.SSCameraSDK.Perspective-Matrix";
+				PRODUCT_BUNDLE_IDENTIFIER = "ss.Cube-Ambient";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		AB739C49275A097E00AA1F72 /* Release */ = {
+		ABD93291275E0B0D00F97FE1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = G7R3Y58HQ5;
+				DEVELOPMENT_TEAM = 563M4H9P36;
 				GCC_PREPROCESSOR_DEFINITIONS = "GLES_SILENCE_DEPRECATION=1";
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Draw-Cube/Info.plist";
+				INFOPLIST_FILE = "Cube-Ambient/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -350,7 +350,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "SS.SSCameraSDK.Perspective-Matrix";
+				PRODUCT_BUNDLE_IDENTIFIER = "ss.Cube-Ambient";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -360,25 +360,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AB739C29275A097B00AA1F72 /* Build configuration list for PBXProject "Draw-Cube" */ = {
+		ABD93271275E0B0A00F97FE1 /* Build configuration list for PBXProject "Cube-Ambient" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AB739C45275A097E00AA1F72 /* Debug */,
-				AB739C46275A097E00AA1F72 /* Release */,
+				ABD9328D275E0B0D00F97FE1 /* Debug */,
+				ABD9328E275E0B0D00F97FE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AB739C47275A097E00AA1F72 /* Build configuration list for PBXNativeTarget "Draw-Cube" */ = {
+		ABD9328F275E0B0D00F97FE1 /* Build configuration list for PBXNativeTarget "Cube-Ambient" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AB739C48275A097E00AA1F72 /* Debug */,
-				AB739C49275A097E00AA1F72 /* Release */,
+				ABD93290275E0B0D00F97FE1 /* Debug */,
+				ABD93291275E0B0D00F97FE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = AB739C26275A097B00AA1F72 /* Project object */;
+	rootObject = ABD9326E275E0B0A00F97FE1 /* Project object */;
 }
