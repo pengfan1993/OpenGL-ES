@@ -196,6 +196,7 @@
     GLint modelIndex = glGetUniformLocation(_esContext.program, "modelTransform");
     GLint viewIndex = glGetUniformLocation(_esContext.program, "viewTransform");
     GLint projectIndex = glGetUniformLocation(_esContext.program, "projectTransform");
+    GLint normalizedTransIndex = glGetUniformLocation(_esContext.program, "normalizedTransform");
     
     GLKMatrix4 rotate = GLKMatrix4MakeRotation(varyFactor * M_PI * 2, 1, 1, 1);
     GLKMatrix4 translate = GLKMatrix4MakeTranslation(-0.1, -0.1, -0.1);
@@ -205,18 +206,23 @@
     static float light[3] = {1.0f, 1.0f, 1.0f};
     
     //假设点光源的位置在Z轴上
-    static float lightPos[3] = {0.0f,0.0f,1.0f};
+    static float lightPos[3] = {1.0f,1.0f,1.0f};
     
     GLKMatrix4 projectionMatrix = GLKMatrix4MakePerspective(GLKMathDegreesToRadians(90), view.frame.size.width / view.frame.size.height, 0.2, 10.0);
     
     
-    GLKMatrix4 cameraMatrix = GLKMatrix4MakeLookAt(0, 0, 2 * (varyFactor + 1), 0, 0, 0, 0, 1, 0);
+    GLKMatrix4 cameraMatrix = GLKMatrix4MakeLookAt(0, 0, 2, 0, 0, 0, 0, 1, 0);
+    
+    //法向量转换为世界空间时，需要乘以模型矩阵的逆转置矩阵
+    BOOL canConvert = YES;
+    GLKMatrix4 inverseTransposeMatrix = GLKMatrix4InvertAndTranspose(modelMatrix, &canConvert);
+    
     
     //加载MVP矩阵
     glUniformMatrix4fv(modelIndex, 1, GL_FALSE, modelMatrix.m);
     glUniformMatrix4fv(viewIndex  , 1, GL_FALSE, cameraMatrix.m);
     glUniformMatrix4fv(projectIndex, 1, GL_FALSE, projectionMatrix.m);
-    
+    glUniformMatrix4fv(normalizedTransIndex, 1, GL_FALSE, inverseTransposeMatrix.m);
     glVertexAttrib3fv(lightColor, light);
     glVertexAttrib3fv(lightPosition, lightPos);
     

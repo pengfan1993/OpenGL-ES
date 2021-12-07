@@ -13,6 +13,7 @@ out vec3 Normal;
 uniform mat4 modelTransform;
 uniform mat4 viewTransform;
 uniform mat4 projectTransform;
+uniform mat4 normalizedTransform;
 
 void main(){
     
@@ -26,6 +27,6 @@ void main(){
     //光源位置
     lightPos = lightPosition;
     
-    //法向量
-    Normal = N;
+    //法向量（需要转换为世界坐标下的）
+    Normal = (normalizedTransform * vec4(N,1.0)).xyz;
 }

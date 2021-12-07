@@ -24,6 +24,9 @@ void main() {
     float diff = max(dot(norm,lightDirection), 0.0);
     vec3 diffuse = diff * fragLigntColor;
     
+    //镜面反射
+    float specStrength = 0.5;
+    
     //设定材料颜色为红色
     vec3 materialColor = vec3(1.0,0.0,0.0);
     
