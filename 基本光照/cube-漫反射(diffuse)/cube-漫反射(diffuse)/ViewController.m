@@ -35,13 +35,13 @@
 }
 
 //绘制每个与X,Y,Z,-X,-Y,-Z轴垂直的面
-- (void)drawPositiveXWithNormalLocation:(GLuint)normalLocation andPositionLocation:(GLuint)positionLocation {
+- (void)drawPositiveXWithColorLocation:(GLuint)colorLocation andPositionLocation:(GLuint)positionLocation {
     //每一行代表(x,y,z,r,g,b)
     static GLfloat positiveX[24] = {
         0.5f,  0.5f,  0.5f, 1.0f, 0.0f, 0.0f,
-        0.5f,  -0.5f, 0.5f, 1.0f, 0.0f, 0.0f,
+        0.5f, -0.5f,  0.5f, 1.0f, 0.0f, 0.0f,
         0.5f, -0.5f, -0.5f, 1.0f, 0.0f, 0.0f,
-        0.5f, 0.5f,  -0.5f, 1.0f, 0.0f, 0.0f,
+        0.5f,  0.5f, -0.5f, 1.0f, 0.0f, 0.0f,
         
     };
     
@@ -53,18 +53,18 @@
     
     GLuint offset = 3 * sizeof(float);
     glVertexAttribPointer(positionLocation, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), NULL);
-    glVertexAttribPointer(normalLocation, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (const void *) offset);
+    glVertexAttribPointer(colorLocation, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (const void *) offset);
     
     _esContext.drawFunc(&_esContext);
     
 }
--(void)drawNegativeXWithNormalLocation:(GLuint)normalLocation andPositionLocation:(GLuint)positionLocation {
+-(void)drawNegativeXWithColorLocation:(GLuint)colorLocation andPositionLocation:(GLuint)positionLocation {
     //每一行代表(x,y,z,r,g,b)
     static GLfloat positiveX[] = {
-        -0.5,  0.5,  0.5, -1.0, 0.0, 0.0,
-        -0.5,  0.5, -0.5, -1.0, 0.0, 0.0,
-        -0.5, -0.5, -0.5, -1.0, 0.0, 0.0,
-        -0.5, -0.5,  0.5, -1.0, 0.0, 0.0,
+        -0.5,  0.5,  0.5, -1.0f, 0.0f, 0.0f,
+        -0.5,  0.5, -0.5, -1.0f, 0.0f, 0.0f,
+        -0.5, -0.5, -0.5, -1.0f, 0.0f, 0.0f,
+        -0.5, -0.5,  0.5, -1.0f, 0.0f, 0.0f,
         
     };
     
@@ -76,17 +76,17 @@
     
     GLuint offset = 3 * sizeof(float);
     glVertexAttribPointer(positionLocation, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), NULL);
-    glVertexAttribPointer(normalLocation, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (const void *) offset);
+    glVertexAttribPointer(colorLocation, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (const void *) offset);
     
     _esContext.drawFunc(&_esContext);
 }
--(void) drawPositiveYWithNormalLocation:(GLuint)normalLocation andPositionLocation:(GLuint)positionLocation{
+-(void)drawPositiveYWithColorLocation:(GLuint)colorLocation andPositionLocation:(GLuint)positionLocation{
     //每一行代表(x,y,z,r,g,b)
     static GLfloat positiveX[] = {
-        -0.5,   0.5,  -0.5, 0.0, 1.0, 0.0,
-        -0.5,   0.5,   0.5, 0.0, 1.0, 0.0,
-         0.5,   0.5,   0.5, 0.0, 1.0, 0.0,
-         0.5,   0.5,  -0.5, 0.0, 1.0, 0.0,
+        -0.5,   0.5,  -0.5, 0.0f, 1.0f, 0.0f,
+        -0.5,   0.5,   0.5, 0.0f, 1.0f, 0.0f,
+         0.5,   0.5,   0.5, 0.0f, 1.0f, 0.0f,
+         0.5,   0.5,  -0.5, 0.0f, 1.0f, 0.0f,
         
     };
     
@@ -98,17 +98,17 @@
     
     GLuint offset = 3 * sizeof(float);
     glVertexAttribPointer(positionLocation, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), NULL);
-    glVertexAttribPointer(normalLocation, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (const void *) offset);
+    glVertexAttribPointer(colorLocation, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (const void *) offset);
     
     _esContext.drawFunc(&_esContext);
 }
-- (void)drawNegativeYWithNormalLocation:(GLuint)normalLocation andPositionLocation:(GLuint)positionLocation {
+- (void)drawNegativeYWithColorLocation:(GLuint)colorLocation andPositionLocation:(GLuint)positionLocation {
     //每一行代表(x,y,z,r,g,b)
     static GLfloat positiveX[] = {
-        -0.5,  -0.5, -0.5, 0.0, -1.0, 0.0,
-        -0.5,  -0.5,  0.5, 0.0, -1.0, 0.0,
-         0.5,  -0.5,  0.5, 0.0, -1.0, 0.0,
-         0.5,  -0.5, -0.5, 0.0, -1.0, 0.0,
+        -0.5,  -0.5, -0.5, 0.0f, -1.0f, 0.0f,
+        -0.5,  -0.5,  0.5, 0.0f, -1.0f, 0.0f,
+         0.5,  -0.5,  0.5, 0.0f, -1.0f, 0.0f,
+         0.5,  -0.5, -0.5, 0.0f, -1.0f, 0.0f,
         
     };
     
@@ -120,17 +120,17 @@
     
     GLuint offset = 3 * sizeof(float);
     glVertexAttribPointer(positionLocation, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), NULL);
-    glVertexAttribPointer(normalLocation, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (const void *) offset);
+    glVertexAttribPointer(colorLocation, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (const void *) offset);
     
     _esContext.drawFunc(&_esContext);
 }
-- (void)drawPositiveZWithNormalLocation:(GLuint)normalLocation andPositionLocation:(GLuint)positionLocation {
+- (void)drawPositiveZWithColorLocation:(GLuint)colorLocation andPositionLocation:(GLuint)positionLocation {
     //每一行代表(x,y,z,r,g,b)
     static GLfloat positiveX[] = {
-        -0.5,  0.5,  0.5, 0.0, 0.0, 1.0,
-        -0.5, -0.5,  0.5, 0.0, 0.0, 1.0,
-         0.5, -0.5,  0.5, 0.0, 0.0, 1.0,
-         0.5,  0.5,  0.5, 0.0, 0.0, 1.0,
+        -0.5,  0.5,  0.5, 0.0f, 0.0f, 1.0f,
+        -0.5, -0.5,  0.5, 0.0f, 0.0f, 1.0f,
+         0.5, -0.5,  0.5, 0.0f, 0.0f, 1.0f,
+         0.5,  0.5,  0.5, 0.0f, 0.0f, 1.0f,
     };
     
     if (self.vertexBufferId == 0) {
@@ -141,17 +141,17 @@
     
     GLuint offset = 3 * sizeof(float);
     glVertexAttribPointer(positionLocation, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), NULL);
-    glVertexAttribPointer(normalLocation, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (const void *) offset);
+    glVertexAttribPointer(colorLocation, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (const void *) offset);
     
     _esContext.drawFunc(&_esContext);
 }
-- (void)drawNegativeZWithNormalLocation:(GLuint)normalLocation andPositionLocation:(GLuint)positionLocation {
+- (void)drawNegativeZWithColorLocation:(GLuint)colorLocation andPositionLocation:(GLuint)positionLocation {
     //每一行代表(x,y,z,r,g,b)
     static GLfloat positiveX[] = {
-        -0.5,  0.5, -0.5, 0.0, 0.0, -1.0,
-        -0.5, -0.5, -0.5, 0.0, 0.0, -1.0,
-         0.5, -0.5, -0.5, 0.0, 0.0, -1.0,
-         0.5,  0.5, -0.5, 0.0, 0.0, -1.0,
+        -0.5,  0.5, -0.5, 0.0f, 0.0f, -1.0f,
+        -0.5, -0.5, -0.5, 0.0f, 0.0f, -1.0f,
+         0.5, -0.5, -0.5, 0.0f, 0.0f, -1.0f,
+         0.5,  0.5, -0.5, 0.0f, 0.0f, -1.0f,
         
     };
     
@@ -165,16 +165,15 @@
     
     GLuint offset = 3 * sizeof(float);
     glVertexAttribPointer(positionLocation, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), NULL);
-    glVertexAttribPointer(normalLocation, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (const void *) offset);
+    glVertexAttribPointer(colorLocation, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (const void *) offset);
     
     _esContext.drawFunc(&_esContext);
     
 }
 - (void)glkView:(GLKView *)view drawInRect:(CGRect)rect {
     [super glkView:view drawInRect:rect];
-    _elapsedTime += 0.02;
-    //时间系数
-    float varyFactor =  (sin(self.elapsedTime) + 1.0) / 2.0; //0 ~ 1
+
+    //* 跟上一章例子相比，这里不做随时间改变的变换
     _esContext.width = view.drawableWidth;
     _esContext.height = view.drawableHeight;
     
@@ -184,65 +183,74 @@
     
     glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
     
-    //获取法向量和position的index
-    GLint normalIndex = glGetAttribLocation(_esContext.program, "N");
+    //获取Color和position的index
     GLint positionIndex = glGetAttribLocation(_esContext.program, "vPosition");
+    GLint normalIndex = glGetAttribLocation(_esContext.program, "N");
     
-    //获取光照属性的index
-    GLint lightColor = glGetAttribLocation(_esContext.program, "LightColor");
-    GLint lightPosition = glGetAttribLocation(_esContext.program, "lightPosition");
-    
+    /*
+     uniform mat4 modelTransform;
+     uniform mat4 viewTransform;
+     uniform mat4 projectTransform;
+     **/
     //创建MVP矩阵
     GLint modelIndex = glGetUniformLocation(_esContext.program, "modelTransform");
     GLint viewIndex = glGetUniformLocation(_esContext.program, "viewTransform");
     GLint projectIndex = glGetUniformLocation(_esContext.program, "projectTransform");
-    GLint normalizedTransIndex = glGetUniformLocation(_esContext.program, "normalizedTransform");
+    GLint lightColorIndex = glGetUniformLocation(_esContext.program, "lightColor");
+    GLint lightPosIndex = glGetUniformLocation(_esContext.program, "lightPos");
+    GLint invertTransposeIndex = glGetUniformLocation(_esContext.program, "invertTransposeMatrix");
     
-    GLKMatrix4 rotate = GLKMatrix4MakeRotation(varyFactor * M_PI * 2, 1, 1, 1);
-    GLKMatrix4 translate = GLKMatrix4MakeTranslation(-0.1, -0.1, -0.1);
     
-    GLKMatrix4 modelMatrix = GLKMatrix4Multiply(translate, rotate);
+    GLKMatrix4 rotate = GLKMatrix4MakeRotation(M_PI * 0.3, 0,1,0);
+    GLKMatrix4 rotate2 = GLKMatrix4MakeRotation(M_PI * 0.15, 1, 0, 0);
+    GLKMatrix4 scale = GLKMatrix4MakeScale(1.0, 1.0, 1.0);
     
-    static float light[3] = {1.0f, 1.0f, 1.0f};
+    GLKMatrix4 modelMatrix = GLKMatrix4Multiply(rotate2, rotate);
+    modelMatrix = GLKMatrix4Multiply(modelMatrix,scale);
     
-    //假设点光源的位置在Z轴上
-    static float lightPos[3] = {1.0f,1.0f,1.0f};
     
     GLKMatrix4 projectionMatrix = GLKMatrix4MakePerspective(GLKMathDegreesToRadians(90), view.frame.size.width / view.frame.size.height, 0.2, 10.0);
     
     
     GLKMatrix4 cameraMatrix = GLKMatrix4MakeLookAt(0, 0, 2, 0, 0, 0, 0, 1, 0);
     
-    //法向量转换为世界空间时，需要乘以模型矩阵的逆转置矩阵
-    BOOL canConvert = YES;
-    GLKMatrix4 inverseTransposeMatrix = GLKMatrix4InvertAndTranspose(modelMatrix, &canConvert);
     
+    //设置环境光颜色为白色
+    static float light[3] = {1.0f, 1.0f, 1.0f};
+    
+    //设置光源位置（世界空间坐标系）
+    static float lightPos[3] = {0.0,5.0,5.0};
+    
+    
+    //获取法线变换矩阵
+    BOOL canConvert = YES;
+    GLKMatrix4 invertTransposeMatrix = GLKMatrix4InvertAndTranspose(modelMatrix, &canConvert);
+    
+    //如果能获取到法线矩阵，就加载
+    if (canConvert) {
+        glUniformMatrix4fv(invertTransposeIndex, 1, GL_FALSE, invertTransposeMatrix.m);
+    }
     
     //加载MVP矩阵
     glUniformMatrix4fv(modelIndex, 1, GL_FALSE, modelMatrix.m);
     glUniformMatrix4fv(viewIndex  , 1, GL_FALSE, cameraMatrix.m);
     glUniformMatrix4fv(projectIndex, 1, GL_FALSE, projectionMatrix.m);
-    glUniformMatrix4fv(normalizedTransIndex, 1, GL_FALSE, inverseTransposeMatrix.m);
-    glVertexAttrib3fv(lightColor, light);
-    glVertexAttrib3fv(lightPosition, lightPos);
-    
+    //设置光照颜色
+    glUniform3fv(lightColorIndex, 1, light);
+    //设置光源位置
+    glUniform3fv(lightPosIndex, 1, lightPos);
     
     //开启顶点属性
     glEnableVertexAttribArray(normalIndex);
     glEnableVertexAttribArray(positionIndex);
-
-    
-    //设置光照颜色
-   
-    
     
     //加载顶点数据，并且依次绘制立方体的六个面
-    [self drawPositiveXWithNormalLocation:normalIndex andPositionLocation:positionIndex];
-    [self drawNegativeXWithNormalLocation:normalIndex andPositionLocation:positionIndex];
-    [self drawPositiveYWithNormalLocation:normalIndex andPositionLocation:positionIndex];
-    [self drawNegativeYWithNormalLocation:normalIndex andPositionLocation:positionIndex];
-    [self drawPositiveZWithNormalLocation:normalIndex andPositionLocation:positionIndex];
-    [self drawNegativeZWithNormalLocation:normalIndex andPositionLocation:positionIndex];
+    [self drawPositiveXWithColorLocation:normalIndex andPositionLocation:positionIndex];
+    [self drawNegativeXWithColorLocation:normalIndex andPositionLocation:positionIndex];
+    [self drawPositiveYWithColorLocation:normalIndex andPositionLocation:positionIndex];
+    [self drawNegativeYWithColorLocation:normalIndex andPositionLocation:positionIndex];
+    [self drawPositiveZWithColorLocation:normalIndex andPositionLocation:positionIndex];
+    [self drawNegativeZWithColorLocation:normalIndex andPositionLocation:positionIndex];
    
     //关闭顶点属性
     glDisableVertexAttribArray(normalIndex);

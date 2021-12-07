@@ -15,8 +15,8 @@ const char * loadShaderSource(NSString *filePath) {
     return [shaderStr cStringUsingEncoding:NSUTF8StringEncoding];
 }
 int init (ESContext *esContext) {
-    NSString *vertexFile = [[NSBundle mainBundle] pathForResource:@"vertexShader.glsl" ofType:nil];
-    NSString *fragmentFile = [[NSBundle mainBundle] pathForResource:@"fragmentShader.glsl" ofType:nil];
+    NSString *vertexFile = [[NSBundle mainBundle] pathForResource:@"vertex.glsl" ofType:nil];
+    NSString *fragmentFile = [[NSBundle mainBundle] pathForResource:@"fragment.glsl" ofType:nil];
     //顶点着色器
     const char * vShaderStr = loadShaderSource(vertexFile);
     const char * fShaderStr = loadShaderSource(fragmentFile);

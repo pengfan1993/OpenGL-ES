@@ -7,39 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		ABD9327B275E0B0A00F97FE1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD9327A275E0B0A00F97FE1 /* AppDelegate.m */; };
-		ABD9327E275E0B0A00F97FE1 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD9327D275E0B0A00F97FE1 /* SceneDelegate.m */; };
-		ABD93284275E0B0A00F97FE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABD93282275E0B0A00F97FE1 /* Main.storyboard */; };
-		ABD93286275E0B0D00F97FE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABD93285275E0B0D00F97FE1 /* Assets.xcassets */; };
-		ABD93289275E0B0D00F97FE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABD93287275E0B0D00F97FE1 /* LaunchScreen.storyboard */; };
-		ABD9328C275E0B0D00F97FE1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD9328B275E0B0D00F97FE1 /* main.m */; };
-		ABD932A2275E0BE200F97FE1 /* vertexShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = ABD9329C275E0BE200F97FE1 /* vertexShader.glsl */; };
-		ABD932A3275E0BE200F97FE1 /* MatrixTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD9329D275E0BE200F97FE1 /* MatrixTransform.m */; };
-		ABD932A4275E0BE200F97FE1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD932A0275E0BE200F97FE1 /* ViewController.m */; };
-		ABD932A5275E0BE200F97FE1 /* fragmentShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = ABD932A1275E0BE200F97FE1 /* fragmentShader.glsl */; };
+		ABF455F2275F4AA700AE5136 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF455F1275F4AA700AE5136 /* AppDelegate.m */; };
+		ABF455F5275F4AA700AE5136 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF455F4275F4AA700AE5136 /* SceneDelegate.m */; };
+		ABF455FB275F4AA700AE5136 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABF455F9275F4AA700AE5136 /* Main.storyboard */; };
+		ABF455FD275F4AA800AE5136 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABF455FC275F4AA800AE5136 /* Assets.xcassets */; };
+		ABF45600275F4AA800AE5136 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABF455FE275F4AA800AE5136 /* LaunchScreen.storyboard */; };
+		ABF45603275F4AA800AE5136 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF45602275F4AA800AE5136 /* main.m */; };
+		ABF4560F275F4AEA00AE5136 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF45609275F4AEA00AE5136 /* ViewController.m */; };
+		ABF45610275F4AEA00AE5136 /* MatrixTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF4560A275F4AEA00AE5136 /* MatrixTransform.m */; };
+		ABF45611275F4AEA00AE5136 /* fragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = ABF4560D275F4AEA00AE5136 /* fragment.glsl */; };
+		ABF45612275F4AEA00AE5136 /* vertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = ABF4560E275F4AEA00AE5136 /* vertex.glsl */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		ABD93276275E0B0A00F97FE1 /* Cube-Ambient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cube-Ambient.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		ABD93279275E0B0A00F97FE1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		ABD9327A275E0B0A00F97FE1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		ABD9327C275E0B0A00F97FE1 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		ABD9327D275E0B0A00F97FE1 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		ABD93283275E0B0A00F97FE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		ABD93285275E0B0D00F97FE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		ABD93288275E0B0D00F97FE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		ABD9328A275E0B0D00F97FE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ABD9328B275E0B0D00F97FE1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		ABD9329C275E0BE200F97FE1 /* vertexShader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vertexShader.glsl; sourceTree = "<group>"; };
-		ABD9329D275E0BE200F97FE1 /* MatrixTransform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatrixTransform.m; sourceTree = "<group>"; };
-		ABD9329E275E0BE200F97FE1 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		ABD9329F275E0BE200F97FE1 /* MatrixTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatrixTransform.h; sourceTree = "<group>"; };
-		ABD932A0275E0BE200F97FE1 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		ABD932A1275E0BE200F97FE1 /* fragmentShader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fragmentShader.glsl; sourceTree = "<group>"; };
+		ABF455ED275F4AA700AE5136 /* Cube-镜面光照(specular).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cube-镜面光照(specular).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABF455F0275F4AA700AE5136 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		ABF455F1275F4AA700AE5136 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		ABF455F3275F4AA700AE5136 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		ABF455F4275F4AA700AE5136 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		ABF455FA275F4AA700AE5136 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ABF455FC275F4AA800AE5136 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ABF455FF275F4AA800AE5136 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ABF45601275F4AA800AE5136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABF45602275F4AA800AE5136 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ABF45609275F4AEA00AE5136 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		ABF4560A275F4AEA00AE5136 /* MatrixTransform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatrixTransform.m; sourceTree = "<group>"; };
+		ABF4560B275F4AEA00AE5136 /* MatrixTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatrixTransform.h; sourceTree = "<group>"; };
+		ABF4560C275F4AEA00AE5136 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		ABF4560D275F4AEA00AE5136 /* fragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fragment.glsl; sourceTree = "<group>"; };
+		ABF4560E275F4AEA00AE5136 /* vertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vertex.glsl; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		ABD93273275E0B0A00F97FE1 /* Frameworks */ = {
+		ABF455EA275F4AA700AE5136 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -49,79 +49,79 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		ABD9326D275E0B0A00F97FE1 = {
+		ABF455E4275F4AA700AE5136 = {
 			isa = PBXGroup;
 			children = (
-				ABD93278275E0B0A00F97FE1 /* Cube-Ambient */,
-				ABD93277275E0B0A00F97FE1 /* Products */,
+				ABF455EF275F4AA700AE5136 /* Cube-镜面光照(specular) */,
+				ABF455EE275F4AA700AE5136 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		ABD93277275E0B0A00F97FE1 /* Products */ = {
+		ABF455EE275F4AA700AE5136 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ABD93276275E0B0A00F97FE1 /* Cube-Ambient.app */,
+				ABF455ED275F4AA700AE5136 /* Cube-镜面光照(specular).app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		ABD93278275E0B0A00F97FE1 /* Cube-Ambient */ = {
+		ABF455EF275F4AA700AE5136 /* Cube-镜面光照(specular) */ = {
 			isa = PBXGroup;
 			children = (
-				ABD93279275E0B0A00F97FE1 /* AppDelegate.h */,
-				ABD9327A275E0B0A00F97FE1 /* AppDelegate.m */,
-				ABD9327C275E0B0A00F97FE1 /* SceneDelegate.h */,
-				ABD9327D275E0B0A00F97FE1 /* SceneDelegate.m */,
-				ABD93282275E0B0A00F97FE1 /* Main.storyboard */,
-				ABD932A1275E0BE200F97FE1 /* fragmentShader.glsl */,
-				ABD9329C275E0BE200F97FE1 /* vertexShader.glsl */,
-				ABD9329F275E0BE200F97FE1 /* MatrixTransform.h */,
-				ABD9329D275E0BE200F97FE1 /* MatrixTransform.m */,
-				ABD9329E275E0BE200F97FE1 /* ViewController.h */,
-				ABD932A0275E0BE200F97FE1 /* ViewController.m */,
-				ABD93285275E0B0D00F97FE1 /* Assets.xcassets */,
-				ABD93287275E0B0D00F97FE1 /* LaunchScreen.storyboard */,
-				ABD9328A275E0B0D00F97FE1 /* Info.plist */,
-				ABD9328B275E0B0D00F97FE1 /* main.m */,
+				ABF455F0275F4AA700AE5136 /* AppDelegate.h */,
+				ABF455F1275F4AA700AE5136 /* AppDelegate.m */,
+				ABF455F3275F4AA700AE5136 /* SceneDelegate.h */,
+				ABF455F4275F4AA700AE5136 /* SceneDelegate.m */,
+				ABF4560B275F4AEA00AE5136 /* MatrixTransform.h */,
+				ABF4560A275F4AEA00AE5136 /* MatrixTransform.m */,
+				ABF4560E275F4AEA00AE5136 /* vertex.glsl */,
+				ABF4560D275F4AEA00AE5136 /* fragment.glsl */,
+				ABF4560C275F4AEA00AE5136 /* ViewController.h */,
+				ABF45609275F4AEA00AE5136 /* ViewController.m */,
+				ABF455F9275F4AA700AE5136 /* Main.storyboard */,
+				ABF455FC275F4AA800AE5136 /* Assets.xcassets */,
+				ABF455FE275F4AA800AE5136 /* LaunchScreen.storyboard */,
+				ABF45601275F4AA800AE5136 /* Info.plist */,
+				ABF45602275F4AA800AE5136 /* main.m */,
 			);
-			path = "Cube-Ambient";
+			path = "Cube-镜面光照(specular)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		ABD93275275E0B0A00F97FE1 /* Cube-Ambient */ = {
+		ABF455EC275F4AA700AE5136 /* Cube-镜面光照(specular) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ABD9328F275E0B0D00F97FE1 /* Build configuration list for PBXNativeTarget "Cube-Ambient" */;
+			buildConfigurationList = ABF45606275F4AA800AE5136 /* Build configuration list for PBXNativeTarget "Cube-镜面光照(specular)" */;
 			buildPhases = (
-				ABD93272275E0B0A00F97FE1 /* Sources */,
-				ABD93273275E0B0A00F97FE1 /* Frameworks */,
-				ABD93274275E0B0A00F97FE1 /* Resources */,
+				ABF455E9275F4AA700AE5136 /* Sources */,
+				ABF455EA275F4AA700AE5136 /* Frameworks */,
+				ABF455EB275F4AA700AE5136 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Cube-Ambient";
-			productName = "Cube-Ambient";
-			productReference = ABD93276275E0B0A00F97FE1 /* Cube-Ambient.app */;
+			name = "Cube-镜面光照(specular)";
+			productName = "Cube-镜面光照(specular)";
+			productReference = ABF455ED275F4AA700AE5136 /* Cube-镜面光照(specular).app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		ABD9326E275E0B0A00F97FE1 /* Project object */ = {
+		ABF455E5275F4AA700AE5136 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
-					ABD93275275E0B0A00F97FE1 = {
+					ABF455EC275F4AA700AE5136 = {
 						CreatedOnToolsVersion = 13.0;
 					};
 				};
 			};
-			buildConfigurationList = ABD93271275E0B0A00F97FE1 /* Build configuration list for PBXProject "Cube-Ambient" */;
+			buildConfigurationList = ABF455E8275F4AA700AE5136 /* Build configuration list for PBXProject "Cube-镜面光照(specular)" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -129,59 +129,59 @@
 				en,
 				Base,
 			);
-			mainGroup = ABD9326D275E0B0A00F97FE1;
-			productRefGroup = ABD93277275E0B0A00F97FE1 /* Products */;
+			mainGroup = ABF455E4275F4AA700AE5136;
+			productRefGroup = ABF455EE275F4AA700AE5136 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				ABD93275275E0B0A00F97FE1 /* Cube-Ambient */,
+				ABF455EC275F4AA700AE5136 /* Cube-镜面光照(specular) */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		ABD93274275E0B0A00F97FE1 /* Resources */ = {
+		ABF455EB275F4AA700AE5136 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABD932A5275E0BE200F97FE1 /* fragmentShader.glsl in Resources */,
-				ABD93289275E0B0D00F97FE1 /* LaunchScreen.storyboard in Resources */,
-				ABD93286275E0B0D00F97FE1 /* Assets.xcassets in Resources */,
-				ABD932A2275E0BE200F97FE1 /* vertexShader.glsl in Resources */,
-				ABD93284275E0B0A00F97FE1 /* Main.storyboard in Resources */,
+				ABF45600275F4AA800AE5136 /* LaunchScreen.storyboard in Resources */,
+				ABF45611275F4AEA00AE5136 /* fragment.glsl in Resources */,
+				ABF455FD275F4AA800AE5136 /* Assets.xcassets in Resources */,
+				ABF455FB275F4AA700AE5136 /* Main.storyboard in Resources */,
+				ABF45612275F4AEA00AE5136 /* vertex.glsl in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		ABD93272275E0B0A00F97FE1 /* Sources */ = {
+		ABF455E9275F4AA700AE5136 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABD9327B275E0B0A00F97FE1 /* AppDelegate.m in Sources */,
-				ABD932A3275E0BE200F97FE1 /* MatrixTransform.m in Sources */,
-				ABD9328C275E0B0D00F97FE1 /* main.m in Sources */,
-				ABD9327E275E0B0A00F97FE1 /* SceneDelegate.m in Sources */,
-				ABD932A4275E0BE200F97FE1 /* ViewController.m in Sources */,
+				ABF455F2275F4AA700AE5136 /* AppDelegate.m in Sources */,
+				ABF45603275F4AA800AE5136 /* main.m in Sources */,
+				ABF4560F275F4AEA00AE5136 /* ViewController.m in Sources */,
+				ABF455F5275F4AA700AE5136 /* SceneDelegate.m in Sources */,
+				ABF45610275F4AEA00AE5136 /* MatrixTransform.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		ABD93282275E0B0A00F97FE1 /* Main.storyboard */ = {
+		ABF455F9275F4AA700AE5136 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				ABD93283275E0B0A00F97FE1 /* Base */,
+				ABF455FA275F4AA700AE5136 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		ABD93287275E0B0D00F97FE1 /* LaunchScreen.storyboard */ = {
+		ABF455FE275F4AA800AE5136 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				ABD93288275E0B0D00F97FE1 /* Base */,
+				ABF455FF275F4AA800AE5136 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -189,7 +189,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		ABD9328D275E0B0D00F97FE1 /* Debug */ = {
+		ABF45604275F4AA800AE5136 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -248,7 +248,7 @@
 			};
 			name = Debug;
 		};
-		ABD9328E275E0B0D00F97FE1 /* Release */ = {
+		ABF45605275F4AA800AE5136 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -301,17 +301,17 @@
 			};
 			name = Release;
 		};
-		ABD93290275E0B0D00F97FE1 /* Debug */ = {
+		ABF45607275F4AA800AE5136 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = G7R3Y58HQ5;
+				DEVELOPMENT_TEAM = 563M4H9P36;
 				GCC_PREPROCESSOR_DEFINITIONS = "GLES_SILENCE_DEPRECATION=1";
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Cube-Ambient/Info.plist";
+				INFOPLIST_FILE = "Cube-镜面光照(specular)/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -322,24 +322,24 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "ss.Cube-Ambient";
+				PRODUCT_BUNDLE_IDENTIFIER = "ss.Cube------specular-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		ABD93291275E0B0D00F97FE1 /* Release */ = {
+		ABF45608275F4AA800AE5136 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = G7R3Y58HQ5;
+				DEVELOPMENT_TEAM = 563M4H9P36;
 				GCC_PREPROCESSOR_DEFINITIONS = "GLES_SILENCE_DEPRECATION=1";
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Cube-Ambient/Info.plist";
+				INFOPLIST_FILE = "Cube-镜面光照(specular)/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -350,7 +350,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "ss.Cube-Ambient";
+				PRODUCT_BUNDLE_IDENTIFIER = "ss.Cube------specular-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -360,25 +360,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		ABD93271275E0B0A00F97FE1 /* Build configuration list for PBXProject "Cube-Ambient" */ = {
+		ABF455E8275F4AA700AE5136 /* Build configuration list for PBXProject "Cube-镜面光照(specular)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ABD9328D275E0B0D00F97FE1 /* Debug */,
-				ABD9328E275E0B0D00F97FE1 /* Release */,
+				ABF45604275F4AA800AE5136 /* Debug */,
+				ABF45605275F4AA800AE5136 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ABD9328F275E0B0D00F97FE1 /* Build configuration list for PBXNativeTarget "Cube-Ambient" */ = {
+		ABF45606275F4AA800AE5136 /* Build configuration list for PBXNativeTarget "Cube-镜面光照(specular)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ABD93290275E0B0D00F97FE1 /* Debug */,
-				ABD93291275E0B0D00F97FE1 /* Release */,
+				ABF45607275F4AA800AE5136 /* Debug */,
+				ABF45608275F4AA800AE5136 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = ABD9326E275E0B0A00F97FE1 /* Project object */;
+	rootObject = ABF455E5275F4AA700AE5136 /* Project object */;
 }

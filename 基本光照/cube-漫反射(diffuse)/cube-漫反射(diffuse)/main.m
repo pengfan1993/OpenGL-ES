@@ -1,8 +1,8 @@
 //
 //  main.m
-//  Cube-Ambient
+//  cube-漫反射(diffuse)
 //
-//  Created by pengfan on 2021/12/6.
+//  Created by pengfan on 2021/12/7.
 //
 
 #import <UIKit/UIKit.h>
