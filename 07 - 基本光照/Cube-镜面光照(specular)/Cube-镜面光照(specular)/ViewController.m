@@ -186,6 +186,7 @@
     //获取Color和position的index
     GLint positionIndex = glGetAttribLocation(_esContext.program, "vPosition");
     GLint normalIndex = glGetAttribLocation(_esContext.program, "N");
+
     
     /*
      uniform mat4 modelTransform;
