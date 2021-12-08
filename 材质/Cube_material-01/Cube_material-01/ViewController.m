@@ -187,10 +187,6 @@
     GLint positionIndex = glGetAttribLocation(_esContext.program, "vPosition");
     GLint normalIndex = glGetAttribLocation(_esContext.program, "N");
     
-    static struct material = {
-        
-    }
-    
     /*
      uniform mat4 modelTransform;
      uniform mat4 viewTransform;
@@ -206,11 +202,10 @@
     
     GLint viewposIndex = glGetUniformLocation(_esContext.program, "viewPos");
     
-    GLint materialIndex = glGetUniformLocation(_esContext.program, "Material");
     
     
-    GLKMatrix4 rotate = GLKMatrix4MakeRotation(M_PI * 0.3, 0,1,0);
-    GLKMatrix4 rotate2 = GLKMatrix4MakeRotation(M_PI * 0.15, 1, 0, 0);
+    GLKMatrix4 rotate = GLKMatrix4MakeRotation(M_PI * 0.12, 0,1,0);
+    GLKMatrix4 rotate2 = GLKMatrix4MakeRotation(-M_PI * 0.05, 1, 0, 0);
     GLKMatrix4 scale = GLKMatrix4MakeScale(1.0, 1.0, 1.0);
     
     GLKMatrix4 modelMatrix = GLKMatrix4Multiply(rotate2, rotate);
@@ -220,17 +215,18 @@
     GLKMatrix4 projectionMatrix = GLKMatrix4MakePerspective(GLKMathDegreesToRadians(90), view.frame.size.width / view.frame.size.height, 0.2, 10.0);
     
     
-    GLKMatrix4 cameraMatrix = GLKMatrix4MakeLookAt(0, 0, 2, 0, 0, 0, 0, 1, 0);
+    GLKMatrix4 cameraMatrix = GLKMatrix4MakeLookAt(0,-0.5, 2, 0, 0, 0, 0, 1, 0);
+    
     
     
     //设置环境光颜色为白色
     static float light[3] = {1.0f, 1.0f, 1.0f};
     
     //设置光源位置（世界空间坐标系）
-    static float lightPos[3] = {0.0,1.5,-1.5};
+    static float lightPos[3] = {0.5,0.2,1.0};
     
     //这里设置观察点为摄像机的位置(cameraMatrix里eye的位置)
-    static float viewPos[3] = {0.0,0.0,2.0};
+    static float viewPos[3] = {0.0,-0.5,2.0};
     
     
     //获取法线变换矩阵
@@ -246,6 +242,14 @@
     glUniformMatrix4fv(modelIndex, 1, GL_FALSE, modelMatrix.m);
     glUniformMatrix4fv(viewIndex  , 1, GL_FALSE, cameraMatrix.m);
     glUniformMatrix4fv(projectIndex, 1, GL_FALSE, projectionMatrix.m);
+    
+    glUniform3f(glGetUniformLocation(_esContext.program, "material.ambient"), 1.0, 0.5, 0.31);
+    glUniform3f(glGetUniformLocation(_esContext.program, "material.diffuse"), 1.0, 0.5, 0.31);
+    glUniform3f(glGetUniformLocation(_esContext.program, "material.specular"), 0.5, 0.5, 0.5);
+    glUniform1f(glGetUniformLocation(_esContext.program, "material.shineness"), 32.f);
+    
+
+    
     //设置光照颜色
     glUniform3fv(lightColorIndex, 1, light);
     //设置光源位置

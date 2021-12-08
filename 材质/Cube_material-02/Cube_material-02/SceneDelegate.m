@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.m
-//  cube-material
+//  Cube_material-02
 //
-//  Created by pengfan on 2021/12/7.
+//  Created by pengfan on 2021/12/8.
 //
 
 #import "SceneDelegate.h"

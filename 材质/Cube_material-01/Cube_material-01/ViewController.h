@@ -7,11 +7,6 @@
 
 #import <UIKit/UIKit.h>
 #import <GLKit/GLKit.h>
-typedef struct Material {
-    float[3] ambient;
-    float[3] diffuse;
-    float[3] 
-};
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ViewController : GLKViewController

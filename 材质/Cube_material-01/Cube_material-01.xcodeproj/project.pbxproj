@@ -7,39 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AB806B79275F688C0079BE35 /* fragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = AB806B74275F688B0079BE35 /* fragment.glsl */; };
-		AB806B7A275F688C0079BE35 /* vertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = AB806B75275F688B0079BE35 /* vertex.glsl */; };
-		AB806B7B275F688C0079BE35 /* MatrixTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = AB806B76275F688B0079BE35 /* MatrixTransform.m */; };
-		AB806B7C275F688C0079BE35 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB806B77275F688C0079BE35 /* ViewController.m */; };
-		ABF45621275F663500AE5136 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF45620275F663500AE5136 /* AppDelegate.m */; };
-		ABF45624275F663500AE5136 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF45623275F663500AE5136 /* SceneDelegate.m */; };
-		ABF4562A275F663500AE5136 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABF45628275F663500AE5136 /* Main.storyboard */; };
-		ABF4562C275F663700AE5136 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABF4562B275F663700AE5136 /* Assets.xcassets */; };
-		ABF4562F275F663700AE5136 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABF4562D275F663700AE5136 /* LaunchScreen.storyboard */; };
-		ABF45632275F663700AE5136 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF45631275F663700AE5136 /* main.m */; };
+		AB4BC29227604EB5004F3681 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB4BC29127604EB5004F3681 /* AppDelegate.m */; };
+		AB4BC29527604EB5004F3681 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB4BC29427604EB5004F3681 /* SceneDelegate.m */; };
+		AB4BC29B27604EB5004F3681 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB4BC29927604EB5004F3681 /* Main.storyboard */; };
+		AB4BC29D27604EB7004F3681 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB4BC29C27604EB7004F3681 /* Assets.xcassets */; };
+		AB4BC2A027604EB7004F3681 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB4BC29E27604EB7004F3681 /* LaunchScreen.storyboard */; };
+		AB4BC2A327604EB7004F3681 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB4BC2A227604EB7004F3681 /* main.m */; };
+		AB4BC2AF27604F00004F3681 /* MatrixTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = AB4BC2A927604F00004F3681 /* MatrixTransform.m */; };
+		AB4BC2B027604F00004F3681 /* fragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = AB4BC2AB27604F00004F3681 /* fragment.glsl */; };
+		AB4BC2B127604F00004F3681 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB4BC2AC27604F00004F3681 /* ViewController.m */; };
+		AB4BC2B227604F00004F3681 /* vertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = AB4BC2AD27604F00004F3681 /* vertex.glsl */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AB806B73275F688B0079BE35 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		AB806B74275F688B0079BE35 /* fragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fragment.glsl; sourceTree = "<group>"; };
-		AB806B75275F688B0079BE35 /* vertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vertex.glsl; sourceTree = "<group>"; };
-		AB806B76275F688B0079BE35 /* MatrixTransform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatrixTransform.m; sourceTree = "<group>"; };
-		AB806B77275F688C0079BE35 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		AB806B78275F688C0079BE35 /* MatrixTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatrixTransform.h; sourceTree = "<group>"; };
-		ABF4561C275F663500AE5136 /* cube-material.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cube-material.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		ABF4561F275F663500AE5136 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		ABF45620275F663500AE5136 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		ABF45622275F663500AE5136 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		ABF45623275F663500AE5136 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		ABF45629275F663500AE5136 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		ABF4562B275F663700AE5136 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		ABF4562E275F663700AE5136 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		ABF45630275F663700AE5136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ABF45631275F663700AE5136 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AB4BC28D27604EB5004F3681 /* Cube_material-01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cube_material-01.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB4BC29027604EB5004F3681 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AB4BC29127604EB5004F3681 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AB4BC29327604EB5004F3681 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		AB4BC29427604EB5004F3681 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		AB4BC29A27604EB5004F3681 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AB4BC29C27604EB7004F3681 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AB4BC29F27604EB7004F3681 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AB4BC2A127604EB7004F3681 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB4BC2A227604EB7004F3681 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AB4BC2A927604F00004F3681 /* MatrixTransform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatrixTransform.m; sourceTree = "<group>"; };
+		AB4BC2AA27604F00004F3681 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AB4BC2AB27604F00004F3681 /* fragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fragment.glsl; sourceTree = "<group>"; };
+		AB4BC2AC27604F00004F3681 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AB4BC2AD27604F00004F3681 /* vertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vertex.glsl; sourceTree = "<group>"; };
+		AB4BC2AE27604F00004F3681 /* MatrixTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatrixTransform.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		ABF45619275F663500AE5136 /* Frameworks */ = {
+		AB4BC28A27604EB5004F3681 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -49,79 +49,79 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		ABF45613275F663500AE5136 = {
+		AB4BC28427604EB5004F3681 = {
 			isa = PBXGroup;
 			children = (
-				ABF4561E275F663500AE5136 /* cube-material */,
-				ABF4561D275F663500AE5136 /* Products */,
+				AB4BC28F27604EB5004F3681 /* Cube_material-01 */,
+				AB4BC28E27604EB5004F3681 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		ABF4561D275F663500AE5136 /* Products */ = {
+		AB4BC28E27604EB5004F3681 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ABF4561C275F663500AE5136 /* cube-material.app */,
+				AB4BC28D27604EB5004F3681 /* Cube_material-01.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		ABF4561E275F663500AE5136 /* cube-material */ = {
+		AB4BC28F27604EB5004F3681 /* Cube_material-01 */ = {
 			isa = PBXGroup;
 			children = (
-				ABF4561F275F663500AE5136 /* AppDelegate.h */,
-				ABF45620275F663500AE5136 /* AppDelegate.m */,
-				ABF45622275F663500AE5136 /* SceneDelegate.h */,
-				ABF45623275F663500AE5136 /* SceneDelegate.m */,
-				ABF45628275F663500AE5136 /* Main.storyboard */,
-				AB806B74275F688B0079BE35 /* fragment.glsl */,
-				AB806B78275F688C0079BE35 /* MatrixTransform.h */,
-				AB806B76275F688B0079BE35 /* MatrixTransform.m */,
-				AB806B75275F688B0079BE35 /* vertex.glsl */,
-				AB806B73275F688B0079BE35 /* ViewController.h */,
-				AB806B77275F688C0079BE35 /* ViewController.m */,
-				ABF4562B275F663700AE5136 /* Assets.xcassets */,
-				ABF4562D275F663700AE5136 /* LaunchScreen.storyboard */,
-				ABF45630275F663700AE5136 /* Info.plist */,
-				ABF45631275F663700AE5136 /* main.m */,
+				AB4BC29027604EB5004F3681 /* AppDelegate.h */,
+				AB4BC29127604EB5004F3681 /* AppDelegate.m */,
+				AB4BC29327604EB5004F3681 /* SceneDelegate.h */,
+				AB4BC29427604EB5004F3681 /* SceneDelegate.m */,
+				AB4BC2AB27604F00004F3681 /* fragment.glsl */,
+				AB4BC2AE27604F00004F3681 /* MatrixTransform.h */,
+				AB4BC2A927604F00004F3681 /* MatrixTransform.m */,
+				AB4BC2AD27604F00004F3681 /* vertex.glsl */,
+				AB4BC2AA27604F00004F3681 /* ViewController.h */,
+				AB4BC2AC27604F00004F3681 /* ViewController.m */,
+				AB4BC29927604EB5004F3681 /* Main.storyboard */,
+				AB4BC29C27604EB7004F3681 /* Assets.xcassets */,
+				AB4BC29E27604EB7004F3681 /* LaunchScreen.storyboard */,
+				AB4BC2A127604EB7004F3681 /* Info.plist */,
+				AB4BC2A227604EB7004F3681 /* main.m */,
 			);
-			path = "cube-material";
+			path = "Cube_material-01";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		ABF4561B275F663500AE5136 /* cube-material */ = {
+		AB4BC28C27604EB5004F3681 /* Cube_material-01 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ABF45635275F663700AE5136 /* Build configuration list for PBXNativeTarget "cube-material" */;
+			buildConfigurationList = AB4BC2A627604EB7004F3681 /* Build configuration list for PBXNativeTarget "Cube_material-01" */;
 			buildPhases = (
-				ABF45618275F663500AE5136 /* Sources */,
-				ABF45619275F663500AE5136 /* Frameworks */,
-				ABF4561A275F663500AE5136 /* Resources */,
+				AB4BC28927604EB5004F3681 /* Sources */,
+				AB4BC28A27604EB5004F3681 /* Frameworks */,
+				AB4BC28B27604EB5004F3681 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "cube-material";
-			productName = "cube-material";
-			productReference = ABF4561C275F663500AE5136 /* cube-material.app */;
+			name = "Cube_material-01";
+			productName = "Cube_material-01";
+			productReference = AB4BC28D27604EB5004F3681 /* Cube_material-01.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		ABF45614275F663500AE5136 /* Project object */ = {
+		AB4BC28527604EB5004F3681 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
-					ABF4561B275F663500AE5136 = {
+					AB4BC28C27604EB5004F3681 = {
 						CreatedOnToolsVersion = 13.0;
 					};
 				};
 			};
-			buildConfigurationList = ABF45617275F663500AE5136 /* Build configuration list for PBXProject "cube-material" */;
+			buildConfigurationList = AB4BC28827604EB5004F3681 /* Build configuration list for PBXProject "Cube_material-01" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -129,59 +129,59 @@
 				en,
 				Base,
 			);
-			mainGroup = ABF45613275F663500AE5136;
-			productRefGroup = ABF4561D275F663500AE5136 /* Products */;
+			mainGroup = AB4BC28427604EB5004F3681;
+			productRefGroup = AB4BC28E27604EB5004F3681 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				ABF4561B275F663500AE5136 /* cube-material */,
+				AB4BC28C27604EB5004F3681 /* Cube_material-01 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		ABF4561A275F663500AE5136 /* Resources */ = {
+		AB4BC28B27604EB5004F3681 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABF4562F275F663700AE5136 /* LaunchScreen.storyboard in Resources */,
-				AB806B79275F688C0079BE35 /* fragment.glsl in Resources */,
-				ABF4562C275F663700AE5136 /* Assets.xcassets in Resources */,
-				ABF4562A275F663500AE5136 /* Main.storyboard in Resources */,
-				AB806B7A275F688C0079BE35 /* vertex.glsl in Resources */,
+				AB4BC2A027604EB7004F3681 /* LaunchScreen.storyboard in Resources */,
+				AB4BC2B027604F00004F3681 /* fragment.glsl in Resources */,
+				AB4BC29D27604EB7004F3681 /* Assets.xcassets in Resources */,
+				AB4BC29B27604EB5004F3681 /* Main.storyboard in Resources */,
+				AB4BC2B227604F00004F3681 /* vertex.glsl in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		ABF45618275F663500AE5136 /* Sources */ = {
+		AB4BC28927604EB5004F3681 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABF45621275F663500AE5136 /* AppDelegate.m in Sources */,
-				AB806B7B275F688C0079BE35 /* MatrixTransform.m in Sources */,
-				ABF45632275F663700AE5136 /* main.m in Sources */,
-				ABF45624275F663500AE5136 /* SceneDelegate.m in Sources */,
-				AB806B7C275F688C0079BE35 /* ViewController.m in Sources */,
+				AB4BC29227604EB5004F3681 /* AppDelegate.m in Sources */,
+				AB4BC2AF27604F00004F3681 /* MatrixTransform.m in Sources */,
+				AB4BC2A327604EB7004F3681 /* main.m in Sources */,
+				AB4BC29527604EB5004F3681 /* SceneDelegate.m in Sources */,
+				AB4BC2B127604F00004F3681 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		ABF45628275F663500AE5136 /* Main.storyboard */ = {
+		AB4BC29927604EB5004F3681 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				ABF45629275F663500AE5136 /* Base */,
+				AB4BC29A27604EB5004F3681 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		ABF4562D275F663700AE5136 /* LaunchScreen.storyboard */ = {
+		AB4BC29E27604EB7004F3681 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				ABF4562E275F663700AE5136 /* Base */,
+				AB4BC29F27604EB7004F3681 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -189,7 +189,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		ABF45633275F663700AE5136 /* Debug */ = {
+		AB4BC2A427604EB7004F3681 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -248,7 +248,7 @@
 			};
 			name = Debug;
 		};
-		ABF45634275F663700AE5136 /* Release */ = {
+		AB4BC2A527604EB7004F3681 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -301,16 +301,16 @@
 			};
 			name = Release;
 		};
-		ABF45636275F663700AE5136 /* Debug */ = {
+		AB4BC2A727604EB7004F3681 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 563M4H9P36;
+				DEVELOPMENT_TEAM = G7R3Y58HQ5;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "cube-material/Info.plist";
+				INFOPLIST_FILE = "Cube_material-01/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -321,23 +321,23 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "ss.cube-material";
+				PRODUCT_BUNDLE_IDENTIFIER = "ss.Cube-material-01";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		ABF45637275F663700AE5136 /* Release */ = {
+		AB4BC2A827604EB7004F3681 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 563M4H9P36;
+				DEVELOPMENT_TEAM = G7R3Y58HQ5;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "cube-material/Info.plist";
+				INFOPLIST_FILE = "Cube_material-01/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -348,7 +348,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "ss.cube-material";
+				PRODUCT_BUNDLE_IDENTIFIER = "ss.Cube-material-01";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -358,25 +358,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		ABF45617275F663500AE5136 /* Build configuration list for PBXProject "cube-material" */ = {
+		AB4BC28827604EB5004F3681 /* Build configuration list for PBXProject "Cube_material-01" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ABF45633275F663700AE5136 /* Debug */,
-				ABF45634275F663700AE5136 /* Release */,
+				AB4BC2A427604EB7004F3681 /* Debug */,
+				AB4BC2A527604EB7004F3681 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ABF45635275F663700AE5136 /* Build configuration list for PBXNativeTarget "cube-material" */ = {
+		AB4BC2A627604EB7004F3681 /* Build configuration list for PBXNativeTarget "Cube_material-01" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ABF45636275F663700AE5136 /* Debug */,
-				ABF45637275F663700AE5136 /* Release */,
+				AB4BC2A727604EB7004F3681 /* Debug */,
+				AB4BC2A827604EB7004F3681 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = ABF45614275F663500AE5136 /* Project object */;
+	rootObject = AB4BC28527604EB5004F3681 /* Project object */;
 }

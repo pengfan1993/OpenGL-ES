@@ -6,7 +6,13 @@ struct Material {
     vec3 diffuse;
     vec3 specular;
     float shineness;
-}
+};
+
+struct Light {
+    vec3 ambient;
+    vec3 diffuse;
+    vec3 specular;
+};
 
 uniform vec3 lightColor;
 //光源位置
@@ -18,6 +24,9 @@ uniform vec3 viewPos;
 //物体材质
 uniform Material material;
 
+//光照的属性
+uniform Light light;
+
 in vec3 Normal;
 in vec3 fragPos;
 
@@ -25,14 +34,14 @@ out vec4 gColor;
 
 void main() {
     //计算环境光照
-    vec3 ambient =  lightColor * material.ambient;
+    vec3 ambient =  light.ambient * material.ambient;
     
     //计算漫反射
     vec3 norm = normalize(Normal);
     vec3 lightDirection = normalize(lightPos - fragPos);
     
     float diffu = dot(norm,lightDirection);
-    vec3 diffuse = lightColor * (diffu * material.diffuse);
+    vec3 diffuse = light.diffuse * (diffu * material.diffuse);
     
     //计算镜面光照
     
@@ -43,7 +52,7 @@ void main() {
     
     float spec = pow(max(dot(viewDirection,reflectDirection), 0.0) , material.shineness);
     
-    vec3 specular =  lightColor * (spec * material.specular);
+    vec3 specular =  light.specular * (spec * material.specular);
 
     //最终颜色（这里指定物体颜色为红色）
     vec3 result = ambient + diffuse + specular;
