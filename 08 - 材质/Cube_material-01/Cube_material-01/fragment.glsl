@@ -45,7 +45,7 @@ void main() {
     
     vec3 specular =  lightColor * (spec * material.specular);
 
-    //最终颜色（这里指定物体颜色为红色）
+    //最终颜色
     vec3 result = ambient + diffuse + specular;
 
     gColor = vec4(result,1.0);

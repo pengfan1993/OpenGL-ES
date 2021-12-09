@@ -1,8 +1,8 @@
 //
 //  AppDelegate.h
-//  texture-cube
+//  texture_diffuseMap
 //
-//  Created by pengfan on 2021/12/8.
+//  Created by pengfan on 2021/12/9.
 //
 
 #import <UIKit/UIKit.h>

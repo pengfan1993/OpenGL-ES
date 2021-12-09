@@ -15,9 +15,9 @@
 		AB4BC33027609975004F3681 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB4BC32F27609975004F3681 /* main.m */; };
 		AB4BC33B27609A9E004F3681 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB4BC33927609A9E004F3681 /* ViewController.m */; };
 		AB4BC33C27609A9E004F3681 /* MatrixTransform.m in Sources */ = {isa = PBXBuildFile; fileRef = AB4BC33A27609A9E004F3681 /* MatrixTransform.m */; };
-		AB4BC33E2760A045004F3681 /* wall.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = AB4BC33D2760A045004F3681 /* wall.jpeg */; };
 		AB4BC3412760B0ED004F3681 /* fragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = AB4BC33F2760B0ED004F3681 /* fragment.glsl */; };
 		AB4BC3422760B0ED004F3681 /* vertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = AB4BC3402760B0ED004F3681 /* vertex.glsl */; };
+		AB930E9F2761DF3900805DBC /* wall.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = AB930E9E2761DF3900805DBC /* wall.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,14 +31,13 @@
 		AB4BC32C27609975004F3681 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB4BC32E27609975004F3681 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB4BC32F27609975004F3681 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		AB4BC3362760998F004F3681 /* stb_image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
 		AB4BC33727609A9E004F3681 /* MatrixTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatrixTransform.h; sourceTree = "<group>"; };
 		AB4BC33827609A9E004F3681 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		AB4BC33927609A9E004F3681 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		AB4BC33A27609A9E004F3681 /* MatrixTransform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatrixTransform.m; sourceTree = "<group>"; };
-		AB4BC33D2760A045004F3681 /* wall.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wall.jpeg; sourceTree = "<group>"; };
 		AB4BC33F2760B0ED004F3681 /* fragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fragment.glsl; sourceTree = "<group>"; };
 		AB4BC3402760B0ED004F3681 /* vertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vertex.glsl; sourceTree = "<group>"; };
+		AB930E9E2761DF3900805DBC /* wall.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wall.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,14 +75,13 @@
 				AB4BC32027609972004F3681 /* SceneDelegate.h */,
 				AB4BC32127609972004F3681 /* SceneDelegate.m */,
 				AB4BC32627609972004F3681 /* Main.storyboard */,
-				AB4BC33D2760A045004F3681 /* wall.jpeg */,
+				AB930E9E2761DF3900805DBC /* wall.jpeg */,
 				AB4BC33727609A9E004F3681 /* MatrixTransform.h */,
 				AB4BC33A27609A9E004F3681 /* MatrixTransform.m */,
 				AB4BC33827609A9E004F3681 /* ViewController.h */,
 				AB4BC33927609A9E004F3681 /* ViewController.m */,
 				AB4BC33F2760B0ED004F3681 /* fragment.glsl */,
 				AB4BC3402760B0ED004F3681 /* vertex.glsl */,
-				AB4BC3362760998F004F3681 /* stb_image.h */,
 				AB4BC32927609975004F3681 /* Assets.xcassets */,
 				AB4BC32B27609975004F3681 /* LaunchScreen.storyboard */,
 				AB4BC32E27609975004F3681 /* Info.plist */,
@@ -153,8 +151,8 @@
 				AB4BC32D27609975004F3681 /* LaunchScreen.storyboard in Resources */,
 				AB4BC32A27609975004F3681 /* Assets.xcassets in Resources */,
 				AB4BC3422760B0ED004F3681 /* vertex.glsl in Resources */,
-				AB4BC33E2760A045004F3681 /* wall.jpeg in Resources */,
 				AB4BC32827609972004F3681 /* Main.storyboard in Resources */,
+				AB930E9F2761DF3900805DBC /* wall.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
