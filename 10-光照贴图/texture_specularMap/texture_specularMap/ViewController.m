@@ -258,7 +258,6 @@
     glUniform3f(glGetUniformLocation(_esContext.program, "light.diffuse"), 0.5, 0.5, 0.5);
     glUniform3f(glGetUniformLocation(_esContext.program, "light.specular"), 1.0, 1.0, 1.0);
     
-
     
     //设置光线属性
     //加载纹理
@@ -300,7 +299,7 @@
     [EAGLContext setCurrentContext:view.context];
     
     if (_vertexBufferId != 0) {
-        glDeleteBuffers(1, _vertexBufferId);
+        glDeleteBuffers(1, &_vertexBufferId);
     }
     self.elapsedTime = 0;
     
