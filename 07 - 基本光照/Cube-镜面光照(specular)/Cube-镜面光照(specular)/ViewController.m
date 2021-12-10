@@ -206,10 +206,8 @@
     
     GLKMatrix4 rotate = GLKMatrix4MakeRotation(M_PI * 0.3, 0,1,0);
     GLKMatrix4 rotate2 = GLKMatrix4MakeRotation(M_PI * 0.15, 1, 0, 0);
-    GLKMatrix4 scale = GLKMatrix4MakeScale(1.0, 1.0, 1.0);
     
     GLKMatrix4 modelMatrix = GLKMatrix4Multiply(rotate2, rotate);
-    modelMatrix = GLKMatrix4Multiply(modelMatrix,scale);
     
     
     GLKMatrix4 projectionMatrix = GLKMatrix4MakePerspective(GLKMathDegreesToRadians(90), view.frame.size.width / view.frame.size.height, 0.2, 10.0);

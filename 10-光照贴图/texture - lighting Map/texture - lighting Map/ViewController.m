@@ -15,6 +15,7 @@
 @property (nonatomic,assign)GLuint vertexBufferId;
 @property (nonatomic,assign)double elapsedTime;
 @property (nonatomic,strong)GLKTextureInfo *diffuseMap;
+@property (nonatomic,strong)GLKTextureInfo *specularMap;
 @end
 @implementation ViewController
 - (void)viewDidLoad {
@@ -22,6 +23,7 @@
     self.elapsedTime = 0;
     [self setupEGAL];
     [self loadDiffuseMap];
+    [self loadSpecularMap];
 }
 - (void)setupEGAL {
     self.context = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES3];
@@ -39,6 +41,11 @@
     NSString *diffusePath = [[NSBundle mainBundle] pathForResource:@"diffuse_map.png" ofType:nil];
     
     self.diffuseMap = [GLKTextureLoader textureWithContentsOfFile:diffusePath options:nil error:nil];
+}
+- (void)loadSpecularMap {
+    NSString *specularPath = [[NSBundle mainBundle] pathForResource:@"specular_map.png" ofType:nil];
+    
+    self.specularMap = [GLKTextureLoader textureWithContentsOfFile:specularPath options:nil error:nil];
 }
 
 //绘制每个与X,Y,Z,-X,-Y,-Z轴垂直的面
@@ -191,7 +198,12 @@
 - (void)glkView:(GLKView *)view drawInRect:(CGRect)rect {
     [super glkView:view drawInRect:rect];
     
-    //这里没添加时间参数，绘制静止的
+    _elapsedTime += 0.02;
+    //时间系数
+    float varyFactor =  (sin(self.elapsedTime) + 1.0) / 2.0; //0 ~ 1
+    _esContext.width = view.drawableWidth;
+    _esContext.height = view.drawableHeight;
+    
     
     _esContext.width = view.drawableWidth;
     _esContext.height = view.drawableHeight;
@@ -215,10 +227,10 @@
     GLint lightPosIndex = glGetUniformLocation(_esContext.program, "lightPos");
     GLint viewPosIndex = glGetUniformLocation(_esContext.program, "viewPos");
     
-    GLKMatrix4 rotate = GLKMatrix4MakeRotation(M_PI * 0.12, 0,1,0);
-    GLKMatrix4 rotate2 = GLKMatrix4MakeRotation(-M_PI * 0.05, 1, 0, 0);
+    GLKMatrix4 rotate = GLKMatrix4MakeRotation(varyFactor * M_PI * 2, 1, 1, 1);
+    GLKMatrix4 scale = GLKMatrix4MakeScale(1.05, 1.05, 1.05);
     
-    GLKMatrix4 modelMatrix = GLKMatrix4Multiply(rotate2, rotate);
+    GLKMatrix4 modelMatrix = GLKMatrix4Multiply(rotate, scale);
 
     GLKMatrix4 projectionMatrix = GLKMatrix4MakePerspective(GLKMathDegreesToRadians(90), view.frame.size.width / view.frame.size.height, 0.2, 10.0);
     
@@ -258,7 +270,10 @@
     glActiveTexture(GL_TEXTURE0);
     glBindTexture(GL_TEXTURE_2D, self.diffuseMap.name);
     glUniform1i(glGetUniformLocation(_esContext.program, "material.diffuseMap"), 0);
-    glUniform3f(glGetUniformLocation(_esContext.program, "material.specular"), 1.0, 1.0, 1.0);
+    
+    glActiveTexture(GL_TEXTURE1);
+    glBindTexture(GL_TEXTURE_2D, self.specularMap.name);
+    glUniform1i(glGetUniformLocation(_esContext.program, "material.specularMap"), 1);
     glUniform1f(glGetUniformLocation(_esContext.program, "material.shineness"), 16.0);
     
     //开启顶点属性

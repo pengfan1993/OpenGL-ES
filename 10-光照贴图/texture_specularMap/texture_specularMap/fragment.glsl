@@ -3,7 +3,7 @@ precision mediump float;
 
 struct Material {
     sampler2D diffuseMap;
-    vec3 specular;
+    sampler2D specularMap;
     float shineness; //高光反射
 
 };
@@ -53,7 +53,7 @@ void main() {
     vec3 reflectDirection =  reflect(-lightDirection,norm);
 
     float spec = pow( max(dot(viewDirection, reflectDirection), 0.0), material.shineness);
-    vec3 specular = light.specular * spec * material.specular;
+    vec3 specular = light.specular * spec * vec3(texture(material.specularMap, oTextCoord));
 
     fragColor = vec4((ambient + diffuse + specular), 1.0);
     

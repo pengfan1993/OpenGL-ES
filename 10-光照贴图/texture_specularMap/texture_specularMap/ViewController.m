@@ -15,6 +15,7 @@
 @property (nonatomic,assign)GLuint vertexBufferId;
 @property (nonatomic,assign)double elapsedTime;
 @property (nonatomic,strong)GLKTextureInfo *diffuseMap;
+@property (nonatomic,strong)GLKTextureInfo *specularMap;
 @end
 @implementation ViewController
 - (void)viewDidLoad {
@@ -22,6 +23,7 @@
     self.elapsedTime = 0;
     [self setupEGAL];
     [self loadDiffuseMap];
+    [self loadSpecularMap];
 }
 - (void)setupEGAL {
     self.context = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES3];
@@ -39,6 +41,11 @@
     NSString *diffusePath = [[NSBundle mainBundle] pathForResource:@"diffuse_map.png" ofType:nil];
     
     self.diffuseMap = [GLKTextureLoader textureWithContentsOfFile:diffusePath options:nil error:nil];
+}
+- (void)loadSpecularMap {
+    NSString *specularPath = [[NSBundle mainBundle] pathForResource:@"specular_map.png" ofType:nil];
+    
+    self.specularMap = [GLKTextureLoader textureWithContentsOfFile:specularPath options:nil error:nil];
 }
 
 //绘制每个与X,Y,Z,-X,-Y,-Z轴垂直的面
@@ -258,7 +265,10 @@
     glActiveTexture(GL_TEXTURE0);
     glBindTexture(GL_TEXTURE_2D, self.diffuseMap.name);
     glUniform1i(glGetUniformLocation(_esContext.program, "material.diffuseMap"), 0);
-    glUniform3f(glGetUniformLocation(_esContext.program, "material.specular"), 1.0, 1.0, 1.0);
+    
+    glActiveTexture(GL_TEXTURE1);
+    glBindTexture(GL_TEXTURE_2D, self.specularMap.name);
+    glUniform1i(glGetUniformLocation(_esContext.program, "material.specularMap"), 1);
     glUniform1f(glGetUniformLocation(_esContext.program, "material.shineness"), 16.0);
     
     //开启顶点属性
