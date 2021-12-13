@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AB739C232759BAEB00AA1F72 /* vertexShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = AB739C212759BAEB00AA1F72 /* vertexShader.glsl */; };
+		AB753DD4276745800062634A /* vertexShader.glsl in Resources */ = {isa = PBXBuildFile; fileRef = AB753DD3276745800062634A /* vertexShader.glsl */; };
 		AB9209312758D2720089A735 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9209302758D2720089A735 /* AppDelegate.m */; };
 		AB9209342758D2720089A735 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9209332758D2720089A735 /* SceneDelegate.m */; };
 		AB92093A2758D2720089A735 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB9209382758D2720089A735 /* Main.storyboard */; };
@@ -20,7 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AB739C212759BAEB00AA1F72 /* vertexShader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = vertexShader.glsl; path = ../../../../metal/GLSL/vertexShader.glsl; sourceTree = "<group>"; };
+		AB753DD3276745800062634A /* vertexShader.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vertexShader.glsl; sourceTree = "<group>"; };
 		AB92092C2758D2720089A735 /* MVP-Transform.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVP-Transform.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB92092F2758D2720089A735 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AB9209302758D2720089A735 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -73,7 +73,7 @@
 				AB9209322758D2720089A735 /* SceneDelegate.h */,
 				AB9209332758D2720089A735 /* SceneDelegate.m */,
 				AB9209582758D7270089A735 /* fragmentShader.glsl */,
-				AB739C212759BAEB00AA1F72 /* vertexShader.glsl */,
+				AB753DD3276745800062634A /* vertexShader.glsl */,
 				AB92094F2758D3240089A735 /* MatrixTransform.m */,
 				AB9209512758D3240089A735 /* MatrixTransform.h */,
 				AB92094E2758D3240089A735 /* ViewController.h */,
@@ -144,7 +144,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB739C232759BAEB00AA1F72 /* vertexShader.glsl in Resources */,
+				AB753DD4276745800062634A /* vertexShader.glsl in Resources */,
 				AB92093F2758D2740089A735 /* LaunchScreen.storyboard in Resources */,
 				AB92093C2758D2740089A735 /* Assets.xcassets in Resources */,
 				AB92095A2758D7270089A735 /* fragmentShader.glsl in Resources */,
